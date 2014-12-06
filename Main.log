@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.30)  27 NOV 2014 20:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.10.7)  5 DEC 2014 17:58
 entering extended mode
 **Main.tex
-("F:\ESI\3CS\Rapport PFE\Rapport\Main.tex"
+(C:\Users\ga\Desktop\rap2\Main.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,9 +13,9 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -31,19 +31,19 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -193,7 +193,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -224,7 +224,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -248,26 +248,26 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\frenchb.ldf"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\frenchb.ldf"
 Language: frenchb 2009/03/16 v2.3d French support from the babel system
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
@@ -284,13 +284,13 @@ Package babel Info: Making ? an active character on input line 123.
 *************************************
 * Local config file frenchb.cfg used
 *
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\frenchb.cfg")))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\frenchb.cfg")))
+("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\scalefnt.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(C:\Users\ga\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -301,18 +301,18 @@ Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count91
@@ -328,29 +328,57 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen113
 \Gm@dimlist=\toks17
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\nomencl\nomencl.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\ga\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 \nomlabelwidth=\dimen114
 \nom@tempdim=\dimen115
 \nomitemsep=\skip52
 )
-("F:\ESI\3CS\Rapport PFE\Rapport\Main.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \degres on input line 15.
-LaTeX Info: Redefining \dots on input line 15.
-LaTeX Info: Redefining \up on input line 15.
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count94
+))
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+(C:\Users\ga\Desktop\rap2\Main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Info: Redefining \degres on input line 16.
+LaTeX Info: Redefining \dots on input line 16.
+LaTeX Info: Redefining \up on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -386,7 +414,20 @@ LaTeX Info: Redefining \up on input line 15.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("F:\ESI\3CS\Rapport PFE\Rapport\PageDeGarde/PageDeGarde.tex"
+(C:\Users\ga\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count95
+\scratchdimen=\dimen118
+\scratchbox=\box26
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen119
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks19
+) (C:\Users\ga\Desktop\rap2\PageDeGarde/PageDeGarde.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -395,78 +436,158 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 36.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
-("F:\ESI\3CS\Rapport PFE\Rapport\Remerciements/Remerciements.tex")
-("F:\ESI\3CS\Rapport PFE\Rapport\Dedicaces/Dedicaces.tex" [1
+{C:/Users/ga/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
+(C:\Users\ga\Desktop\rap2\Remerciements/Remerciements.tex)
+(C:\Users\ga\Desktop\rap2\Dedicaces/Dedicaces.tex [1
 
 ])
-("F:\ESI\3CS\Rapport PFE\Rapport\Resume/Resume.tex" [2
+(C:\Users\ga\Desktop\rap2\Resume/Resume.tex [2
 
 ]) [3
 
 ]
-("F:\ESI\3CS\Rapport PFE\Rapport\Main.toc")
+(C:\Users\ga\Desktop\rap2\Main.toc)
 \tf@toc=\write3
  [4
 
-]
-("F:\ESI\3CS\Rapport PFE\Rapport\Main.lot")
+] (C:\Users\ga\Desktop\rap2\Main.lot)
 \tf@lot=\write4
- [5
 
-]
-("F:\ESI\3CS\Rapport PFE\Rapport\Main.lof")
+[5
+
+] (C:\Users\ga\Desktop\rap2\Main.lof)
 \tf@lof=\write5
 
 No file Main.nls.
-("F:\ESI\3CS\Rapport PFE\Rapport\IntroductionGenerale/IntroductionGenerale.tex"
+(C:\Users\ga\Desktop\rap2\IntroductionGenerale/IntroductionGenerale.tex
 [6
 
-]) ("F:\ESI\3CS\Rapport PFE\Rapport\Chapitre1/Chapitre1.tex" [1
+]) (C:\Users\ga\Desktop\rap2\Chapitre1/Chapitre1.tex [1
 
 ]
 Chapitre 1.
-) ("F:\ESI\3CS\Rapport PFE\Rapport\Chapitre2/Chapitre2.tex" [2
+) (C:\Users\ga\Desktop\rap2\Chapitre2/Chapitre2.tex [2
 
 ]
 Chapitre 2.
-) ("F:\ESI\3CS\Rapport PFE\Rapport\ConclusionGenerale/ConclusionGenerale.tex"
-[3
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+ [3
 
-]) ("F:\ESI\3CS\Rapport PFE\Rapport\Annexe/Annexe.tex" [4
+]
+Underfull \hbox (badness 2393) in paragraph at lines 41--42
+[]\T1/cmr/m/n/12 Alors que la si-mu-la-tion cherche a \T1/cmr/m/it/12 mo-dé-li-
+ser \T1/cmr/m/n/12 le fonc-tion-ne-ment d'un sys-
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
+ Make it at least 14.61858pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5] <netModel.png, id=51, 387.69844pt x 194.22563pt>
+File: netModel.png Graphic file (type png)
+ <use netModel.png>
+Package pdftex.def Info: netModel.png used on input line 72.
+(pdftex.def)             Requested size: 271.38704pt x 135.957pt.
+
+[6 <C:/Users/ga/Desktop/rap2/netModel.png>]
+<nodeModel.png, id=59, 388.45125pt x 380.17032pt>
+File: nodeModel.png Graphic file (type png)
+ <use nodeModel.png>
+Package pdftex.def Info: nodeModel.png used on input line 96.
+(pdftex.def)             Requested size: 271.914pt x 266.1174pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7] [8 <C:/Users/ga/Desktop/rap2/nodeModel.png>] [9] [10] [11] [12]
+<castaliaModel.png, id=80, 425.33907pt x 283.0575pt>
+File: castaliaModel.png Graphic file (type png)
+ <use castaliaModel.png>
+Package pdftex.def Info: castaliaModel.png used on input line 224.
+(pdftex.def)             Requested size: 340.2717pt x 226.44629pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13] [14 <C:/Users/ga/Desktop/rap2/castaliaModel.png>] [15] [16]
+<simpleCompound.png, id=94, 487.06969pt x 215.30438pt>
+File: simpleCompound.png Graphic file (type png)
+
+<use simpleCompound.png>
+Package pdftex.def Info: simpleCompound.png used on input line 305.
+(pdftex.def)             Requested size: 340.94644pt x 150.71204pt.
+ [17 <C:/Users/ga/Desktop/rap2/simpleCompound.png>]
+[18] [19] [20] [21]
+Underfull \hbox (badness 1454) in paragraph at lines 424--426
+[]\T1/cmr/m/n/12 Castalia est basé sur Om-net++ et peut être uti-lisé pour tes-
+ter les al-go-
+ []
+
+[22] <basicStructCastalia.png, id=115, 508.90125pt x 288.3272pt>
+File: basicStructCastalia.png Graphic file (type png)
+
+<use basicStructCastalia.png>
+Package pdftex.def Info: basicStructCastalia.png used on input line 456.
+(pdftex.def)             Requested size: 356.22844pt x 201.82765pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23]) (C:\Users\ga\Desktop\rap2\ConclusionGenerale/ConclusionGenerale.tex
+[24 <C:/Users/ga/Desktop/rap2/basicStructCastalia.png>])
+(C:\Users\ga\Desktop\rap2\Annexe/Annexe.tex [25
 
 ])
-("F:\ESI\3CS\Rapport PFE\Rapport\Bibliographie/Bibliographie.tex"
-("F:\ESI\3CS\Rapport PFE\Rapport\Main.bbl" [5
+(C:\Users\ga\Desktop\rap2\Bibliographie/Bibliographie.tex
+(C:\Users\ga\Desktop\rap2\Main.bbl [26
 
 ]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-)) [6
+)) [27
 
-] ("F:\ESI\3CS\Rapport PFE\Rapport\Main.aux") ) 
+] (C:\Users\ga\Desktop\rap2\Main.aux) ) 
 Here is how much of TeX's memory you used:
- 2126 strings out of 493921
- 28126 string characters out of 3144863
- 85767 words of memory out of 3000000
- 5358 multiletter control sequences out of 15000+200000
- 12469 words of font info for 31 fonts, out of 3000000 for 9000
+ 3052 strings out of 493921
+ 40299 string characters out of 3147291
+ 103747 words of memory out of 3000000
+ 6244 multiletter control sequences out of 15000+200000
+ 16123 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 24i,8n,43p,470b,231s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Anonymous\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Anonymo
-us\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:
-\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ec
-rm1200.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecti2488.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-Output written on Main.pdf (13 pages, 99199 bytes).
+ 29i,10n,43p,849b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\ga\AppData\Local\MiKTeX\2.9\f
+onts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\ga\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\ga\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\ga\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\g
+a\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\
+Users\ga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.p
+k> <C:\Users\ga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecr
+m1200.pk> <C:\Users\ga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecti2488.pk> <C:\Users\ga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
+\ec\dpi600\ecbx1440.pk> <C:\Users\ga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecbx1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb>
+Output written on Main.pdf (34 pages, 396100 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
+ 537 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
