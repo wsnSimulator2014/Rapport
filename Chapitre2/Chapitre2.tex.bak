@@ -394,6 +394,7 @@ L'objectif principale des interfaces utilisateur est de rendre l'intérieur du m
 La même simulation peut être exécutée avec différentes interfaces utilisateur et ceci  sans faire de modifications dans les fichiers du modèle,c'est juste une histoire de configuration.Ceci  permet  a l'utilisateur de faire le test et le débogage de la simulation avec  une interface graphique puissante, et finalement,d'exécuter la simulation avec une interface  utilisateur simple et rapide qui supporte l'exécution  par lots (batch excution).
 
 \subsection{OMNET++ dans la pratique}
+***Cette section donne un aperçu sur comment travailler avec OMNET++ dans la pratique.
 
 Omnet++ est composé des parties suivantes:
 
@@ -410,7 +411,7 @@ Un modèle dans OMNET++ est constitué des parties suivantes:
 \end{itemize}	
 
 Les programmes de simulation sont construits a partir des composants cités précédemment.D'abord les fichiers ".msg" contenant la définition des messages sont traduit
-en C++ en utilisant le programme $opp_msgc$ fournit avec Omnet++.Ensuite,les fichiers 
+en C++ en utilisant le programme "opp_msgc" fournit avec Omnet++.Ensuite,les fichiers 
 sources en C++ sont compilés et une édition de liens est effectuée avec la noyau de la simulation et avec une interface utilisateur pour former soit un exécutable de la simulation(un simulateur) et dans ce cas il pourra être exécuté sur une machine même si celle ci ne dispose pas d'Omnet++,soit une bibliothèque dynamique et dans ce cas les bibliothèques d'Omnet++ doivent être présentes dans la machine ou cette bibliothèque dynamique est utilisée.Les fichiers NED et le fichier de configuration "omnetpp.ini" sont chargé dynamiquement sous leur forme textuel quand la simulation est exécutée.
 
 L'exécutable de la simulation peut inclure plusieurs modèles indépendants qui utilisent le même ensemble de modules.L'utilisateur peut spécifier dans le fichier de configuration quel modèle il désire exécuter.Ceci permet de créer un large exécutable qui contient plusieurs modèles de simulation,et de le distribuer comme outil de simulation autonome.La flexibilité dans la description de la topologie contribue a la réalisation de cette fin. 

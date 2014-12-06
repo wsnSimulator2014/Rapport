@@ -40,7 +40,7 @@
 \contentsline {subsubsection}{Les param\IeC {\`e}tres}{19}
 \contentsline {subsubsection}{M\IeC {\'e}thode de description de la topologie}{20}
 \contentsline {subsection}{\numberline {2.9.2}Programmation des algorithmes}{20}
-\contentsline {subsection}{\numberline {2.9.3}Les interfaces utilisateurs}{21}
+\contentsline {subsection}{\numberline {2.9.3}Les interfaces utilisateur}{21}
 \contentsline {subsection}{\numberline {2.9.4}OMNET++ dans la pratique}{21}
 \contentsline {section}{\numberline {2.10}Pr\IeC {\'e}sentation de Castalia}{22}
 \contentsline {subsection}{\numberline {2.10.1}Structure de Castalia}{23}
