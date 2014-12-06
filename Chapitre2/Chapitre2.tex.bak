@@ -8,7 +8,7 @@ Les réseaux de capteurs sans fils peuvent être considérés comme un type part
 \end{itemize}
 
 Les RCSFs sont formés par un très grand nombre de nœuds capteurs.Opter pour un modèle
- purement analytique\footnote{•} des RCSFs est généralement très complexe pour ne pas dire impossible et conduit généralement a des analyses peu crédibles et beaucoup trop simplifiées.De plus, déployer un RCSF dans la réalité nécessite un effort énorme, et un cout très élevé vu le grand nombre de nœuds capteurs(qui peut varier de quelques centaines de nœuds jusqu'à des milliers).Donc,ce n'est pas raisonnable de déployer un RCSF dans la réalité seulement pour tester un nouveau protocole ou une nouvelle application, et il faudrait plutôt opter pour la simulation.   
+ purement analytique des RCSFs est généralement très complexe pour ne pas dire impossible et conduit généralement a des analyses peu crédibles et beaucoup trop simplifiées.De plus, déployer un RCSF dans la réalité nécessite un effort énorme, et un cout très élevé vu le grand nombre de nœuds capteurs(qui peut varier de quelques centaines de nœuds jusqu'à des milliers).Donc,ce n'est pas raisonnable de déployer un RCSF dans la réalité seulement pour tester un nouveau protocole ou une nouvelle application, et il faudrait plutôt opter pour la simulation.   
  
 \section{Définition de la simulation }
 La simulation permet de reproduire d'une façon virtuelle une situation réel observée.On appelle un simulateur le dispositif(logicielle) qui permet de réalisé la simulation.Il présente sous des conditions contrôlables est observables l'évolution du \emph{modèle} du phénomène.S'il existe plusieurs modèles, on pourra aussi parler de \emph{système} d'une façon plus générale.
@@ -42,7 +42,7 @@ Alors que la simulation cherche a \emph{modéliser} le fonctionnement d'un syst�
 
 L'émulation est une imitation du comportement physique d'un matériel par un logiciel,et elle n'est pas a confondre avec a simulation,laquelle vise a imiter un modèle abstrait.
 
-Dans le domaine des RCSFs,un émulateur  est un outil qui utilise le firmware\footnote{*} ainsi que le matériel (le hardware) pour effectuer la simulation.L'émulation combine le logiciel et le matériel pour simuler un RCSF.En d'autre terme,un émulateur permet de faire coopérer de vrais nœuds capteurs avec des nœuds capteurs simulés afin de construire un RCSF.
+Dans le domaine des RCSFs,un émulateur  est un outil qui utilise le firmware ainsi que le matériel (le hardware) pour effectuer la simulation.L'émulation combine le logiciel et le matériel pour simuler un RCSF.En d'autre terme,un émulateur permet de faire coopérer de vrais nœuds capteurs avec des nœuds capteurs simulés afin de construire un RCSF.
 %Types de simulation et types d'émulation%
 
 
@@ -55,7 +55,7 @@ Dans le domaine des RCSFs,un émulateur  est un outil qui utilise le firmware\fo
 
 \end{itemize}
 \section{Exigences d'une simulation}
-La simulation est une phase essentiel dans l'étude des RCSFs étant la manière la plus commune de tester de nouvelles applications ou de nouveaux protocoles.Cependant,la simulation doit se baser sur  un modèle correcte avec des hypothèses solides et un Framework\footnote{} approprié pour simplifier l'implémentation.
+La simulation est une phase essentiel dans l'étude des RCSFs étant la manière la plus commune de tester de nouvelles applications ou de nouveaux protocoles.Cependant,la simulation doit se baser sur  un modèle correcte avec des hypothèses solides et un Framework approprié pour simplifier l'implémentation.
 
 Les résultats de la simulation reposent sur le scénario mis en place. Ceci inclue les caractéristiques de l'environnement,les hypothèses concernant le matériel et les différentes couches de communication etc.Ces paramètres ne sont -généralement- pas assez précis  pour pouvoir capturer le comportement réel d'un RCSF,mettant ainsi en péril la crédibilité des résultats.
 De l'autre coté,l'utilisation de modèles très détaillés induit une complexité supplémentaire dans le calcule et conduit ainsi a des  problèmes de performance et de mise a l'échelle (lorsque le nombre de nœuds capteurs augmente).
@@ -103,7 +103,7 @@ L'architecture du nœud peut être décomposée en trois tiers comme illustré d
 Ce tiers comprend tout les protocoles de communications.Typiquement,
 trois couche coexistent dans ce niveau.La couche MAC,la couche de routage,et la couche application.Les opérations effectuées par ce tiers dépendent généralement de l'état du tiers physique décrit ci-dessous.Par exemple, la couche réseau (la couche responsable du routage) peut prendre en considération les contraintes de la batterie pour décider de la route que va prendre le paquet.D'où,une méthode efficace d'échange d'informations entre les différents tiers doit être mise en place. 
 \item\textbf{Le tiers physique}
-Représente la plateforme matériel et ses effets sur les performances du nœud capteur.La composition de ce tiers peut changer suivant l'application implémentée par le nœud.Les éléments les plus communs de ce tiers sont: un ensemble de capteurs physiques\footnote{parcequ'il detecte des grandeur physiques :p},le module de gestion énergétique et le module de gestion de la mobilité du nœud.Les capteurs physiques simule le comportement du matériel de surveillance et de détection de stimulus.Le module énergétique simule la consommation énergétique du nœud(une problématique primordiale dans l'évaluation des RCSFs).Finalement,le module de mobilité contrôle la position du nœud capteur dans l'environnement.
+Représente la plateforme matériel et ses effets sur les performances du nœud capteur.La composition de ce tiers peut changer suivant l'application implémentée par le nœud.Les éléments les plus communs de ce tiers sont: un ensemble de capteurs physiques,le module de gestion énergétique et le module de gestion de la mobilité du nœud.Les capteurs physiques simule le comportement du matériel de surveillance et de détection de stimulus.Le module énergétique simule la consommation énergétique du nœud(une problématique primordiale dans l'évaluation des RCSFs).Finalement,le module de mobilité contrôle la position du nœud capteur dans l'environnement.
 \item\textbf{Le tiers du média de transmission}
 C'est le lien du nœud avec le monde extérieur.Un nœud est connecté avec l'environnement par le bais d'un canal radio(pour la communication avec les autres nœuds du réseau),et d'un ou plusieurs canaux physiques (pour la réception des événements ou stimulus a partir de l'environnement).
 \end{enumerate}
@@ -193,7 +193,7 @@ NS-2 est le simulateur de réseaux le plus populaire,OMnet++ se distingue par un
 %INERNET OF THINGS%
   
  \subsubsection{NS-2}
-NS-2 est le simulateur des réseaux le plus utilisé.Il a commencé comme un simulateur de réseaux de communication classiques,le support pour les réseaux ad hoc mobile(MANET) a été ajouté ultérieurement.NS-2 est un simulateur a événement discret ,orienté-objet, écrit en c++.Il dispose d'un interpréteur de langage OTCL utilisé comme front end\footnote{•}.
+NS-2 est le simulateur des réseaux le plus utilisé.Il a commencé comme un simulateur de réseaux de communication classiques,le support pour les réseaux ad hoc mobile(MANET) a été ajouté ultérieurement.NS-2 est un simulateur a événement discret ,orienté-objet, écrit en c++.Il dispose d'un interpréteur de langage OTCL utilisé comme front end.
 
 Le noyau de simulation(le kernel),les modèles,les protocoles et les différents composants sont implémentés en c++,mais sont aussi accessible depuis OTCL.Les scripts OTCL sont utilisés pour la configuration du simulateur,la mise en place de la topologie du réseau, la spécification des scénarios de simulation,l'enregistrement des résultats de la simulation etc.Un script OTCL typique pour une simulation d'un réseau sans fils commence avec une commande de configuration qui définie les paramètres de la couche physique,de la couche MAC ,de  la couche de routage,du modèle de propagation radio etc.
 
@@ -201,11 +201,11 @@ L'étape suivante est la création des nœuds.Les modèles de mouvement des nœu
 
 Un modèle très simple de consommation énergétique est utilisé.Chaque nœud démarre avec une quantité d'énergie initiale,les quantités d'énergies dépensées lors de la transmission et la réception de paquets sont aussi définies.Après l'envoi ou la réception d'un paquet,l'énergie du nœud est décrémentée par une certaine quantité.Quand l'énergie du nœud atteint zero, le nœud en question ne pourra ni envoyer ni recevoir de nouveaux paquets  
 
-L'outil nam permet la visualisation graphique de la progression de la simulation.Durant la simulation ,NS-2 génère un fichier  contenant la trace\footnote{} de la simulation destiné a nam,un script OTCL est utilisé pour définir quelles informations devraient être enregistrées dans ce fichier.nam utilise les données stockées dans ce fichier pour donner une visualisation de la topologie du réseau,et pour animer la circulation des paquets.
+L'outil nam permet la visualisation graphique de la progression de la simulation.Durant la simulation ,NS-2 génère un fichier  contenant la trace de la simulation destiné a nam,un script OTCL est utilisé pour définir quelles informations devraient être enregistrées dans ce fichier.nam utilise les données stockées dans ce fichier pour donner une visualisation de la topologie du réseau,et pour animer la circulation des paquets.
 
 L'utilisation de NS-2 comme outil de simulation pour les RCSFs possède ses inconvénients.D'abord, il n'existe pas  de modèles pour les capteurs physiques(qui détectent les grandeurs physiques),de plus, les formats de paquets et les protocoles MAC définies dans NS-2 sont différents de ceux qu'on trouve dans les RCSFs ,et le modèle de consommation énergétique est très simple.
 
-Cependant,NS-2 est extensible et plusieurs extensions tiers on été développées pour combler les manques cités précédemment.MANNASIM ajoute par exemple: un modèle de capteurs physiques,beaucoup de modèles d'applications,une implémentation du protocole de routage LEACH\footnote{} ,un modèle des capteurs de la marque MICA2 et une interface graphique pour créer automatiquement des scripts OTCL.
+Cependant,NS-2 est extensible et plusieurs extensions tiers on été développées pour combler les manques cités précédemment.MANNASIM ajoute par exemple: un modèle de capteurs physiques,beaucoup de modèles d'applications,une implémentation du protocole de routage LEACH,un modèle des capteurs de la marque MICA2 et une interface graphique pour créer automatiquement des scripts OTCL.
 
 \subsubsection{Omnet++ et Castalia}
 Un autre simulateur a événements discrets est Omnet++.Ce n'est pas un simulateur spécifique aux réseaux de capteurs et ce n'est pas non plus un simulateur spécifique aux réseaux de communications,mais une plateforme pour le développement de simulateurs, dans laquelle plusieurs groupes peuvent construire leur propres simulateurs.Comme l'utilisation la plus répandu d'Omnet++ est la construction de simulateurs pour les réseaux de communication,il est communément décrit comme un simulateur de réseaux.
@@ -240,7 +240,7 @@ Le module radio \iffalse (communément appelé module physique ou \emph{PHY modu
 
 Le module radio effectue aussi La détection de la porteuse et la modulation.Les modulations de type PSK et FSK sont supportés,et l'utilisateur peut très bien définir ses propres modèle de modulation.
 
-Il y'a deux modules MAC disponible dans CASTALIA.Le premier implémente les protocoles TMAC et SMAC alors que le deuxième peut réalisé une approximation de plusieurs protocoles MAC mais ne supporte que les communications en mode broadcast\footnote{}.Les modules radio et MAC peuvent être contrôlés a partir de l'application.
+Il y'a deux modules MAC disponible dans CASTALIA.Le premier implémente les protocoles TMAC et SMAC alors que le deuxième peut réalisé une approximation de plusieurs protocoles MAC mais ne supporte que les communications en mode broadcast.Les modules radio et MAC peuvent être contrôlés a partir de l'application.
 
 Les grandeurs physiques a détecter (les stimulus) sont modélisées par des processus physiques qui peuvent se déplacer et changer de valeur.Les effets de  bruit et de  diffusion sont pris en considération lors de la détection de ces grandeurs physiques.
 
@@ -268,7 +268,7 @@ Cette fonctionnalité est appelée \emph{cross level simulation} et est l'une de
 \section{Présentation d'Omnet++}
 Comme notre travail est basé sur Omnet++ nous allons donner dans cette section une description de cet outil de simulation.
 
-OMNET++ est un \emph{framework}\footnote{} orienté objet,modulaire, pour la simulation des réseaux.Il est basé sur la simulation a événement discret.
+OMNET++ est un \emph{framework} orienté objet,modulaire, pour la simulation des réseaux.Il est basé sur la simulation a événement discret.
 
 Omnet++ peut être utilisé (et il est utilisé ) dans divers domaines:
 \begin{itemize}
@@ -342,7 +342,7 @@ Le même raisonnement s'applique pour les connexions entre les nœuds.Bien qu'il
 \subsubsection{Les messages}
 Les modules communiquent en s'échangeant des messages.Dans une simulation,les messages peuvent être des trames ou des paquets dans le cas d'un réseau d'ordinateurs,des travaux(jobs) ou des clients dans une file d'attente, ou autre type d'entités mobiles.
 
-Le temps local de simulation\footnote{} d'un module avance quand le module reçoit un message.Le message peut arriver d'un autre module ou du module lui même.Dans le deuxième cas,le module s'auto envoi un message,et ceci permet l'implémentation des timer (quand le timer expire le module effectue une action).
+Le temps local de simulation d'un module avance quand le module reçoit un message.Le message peut arriver d'un autre module ou du module lui même.Dans le deuxième cas,le module s'auto envoi un message,et ceci permet l'implémentation des timer (quand le timer expire le module effectue une action).
 \subsubsection{Modélisation de la transmission du paquet}
 Afin de modéliser les réseaux de communication,
 les connexions sont utilisées pour modéliser les liens physiques.Les connexions supportent les paramètres suivants:
@@ -373,7 +373,7 @@ La topologie du réseau est définie dans les fichiers ".ned" ceci inclue:
 \subsection{Programmation des algorithmes}
 
 Les modules simples sont la partie actif du modèle, leur comportement est définie en utilisant le langage de programmation C++.Si l'utilisateur veut définir un algorithme de routage,un algorithme de la couche MAC ou n'importe quel autre fonctionnalité, il doit créer un module simple pour ça, et implémenter l'algorithme voulue comme des fonctions en C++.
-Toute la puissance du langage C++ peut être utilisée.Le programmeur de la simulation peut choisir librement entre un style de programmation événementiel ou un style de programmation procédurale classique. Et peut très bien utiliser tout les concepts de la programmation orienté objet (l'héritage,le polymorphisme,les design patterns\footnote{} etc).
+Toute la puissance du langage C++ peut être utilisée.Le programmeur de la simulation peut choisir librement entre un style de programmation événementiel ou un style de programmation procédurale classique. Et peut très bien utiliser tout les concepts de la programmation orienté objet (l'héritage,le polymorphisme,les design patterns etc).
 
 Les objets présents dans la simulation(messages,modules,files d'attente etc) sont représentés par des classes implémentées en C++.Ces classes ont été conçues de façon a pouvoir travailler ensemble efficacement,créant ainsi  un framework puissant pour la programmation de simulations.Les classes suivantes font partie de la bibliothèque de simulation d'Omnet++:
 
@@ -394,7 +394,6 @@ L'objectif principale des interfaces utilisateur est de rendre l'intérieur du m
 La même simulation peut être exécutée avec différentes interfaces utilisateur et ceci  sans faire de modifications dans les fichiers du modèle,c'est juste une histoire de configuration.Ceci  permet  a l'utilisateur de faire le test et le débogage de la simulation avec  une interface graphique puissante, et finalement,d'exécuter la simulation avec une interface  utilisateur simple et rapide qui supporte l'exécution  par lots (batch excution).
 
 \subsection{OMNET++ dans la pratique}
-***Cette section donne un aperçu sur comment travailler avec OMNET++ dans la pratique.
 
 Omnet++ est composé des parties suivantes:
 
@@ -411,7 +410,7 @@ Un modèle dans OMNET++ est constitué des parties suivantes:
 \end{itemize}	
 
 Les programmes de simulation sont construits a partir des composants cités précédemment.D'abord les fichiers ".msg" contenant la définition des messages sont traduit
-en C++ en utilisant le programme "opp_msgc" fournit avec Omnet++.Ensuite,les fichiers 
+en C++ en utilisant le programme $opp_msgc$ fournit avec Omnet++.Ensuite,les fichiers 
 sources en C++ sont compilés et une édition de liens est effectuée avec la noyau de la simulation et avec une interface utilisateur pour former soit un exécutable de la simulation(un simulateur) et dans ce cas il pourra être exécuté sur une machine même si celle ci ne dispose pas d'Omnet++,soit une bibliothèque dynamique et dans ce cas les bibliothèques d'Omnet++ doivent être présentes dans la machine ou cette bibliothèque dynamique est utilisée.Les fichiers NED et le fichier de configuration "omnetpp.ini" sont chargé dynamiquement sous leur forme textuel quand la simulation est exécutée.
 
 L'exécutable de la simulation peut inclure plusieurs modèles indépendants qui utilisent le même ensemble de modules.L'utilisateur peut spécifier dans le fichier de configuration quel modèle il désire exécuter.Ceci permet de créer un large exécutable qui contient plusieurs modèles de simulation,et de le distribuer comme outil de simulation autonome.La flexibilité dans la description de la topologie contribue a la réalisation de cette fin. 
@@ -421,7 +420,7 @@ Quand l'exécutable de la simulation est lancé ,il lit d'abord tout les fichier
 Les résultats de la simulation peuvent être sauvegardés dans des fichiers.Il existe deux formats de fichier prédéfinies dans OMNET++ pour la sauvegarde des résultats de la simulation: les \emph{vector files} qui servent a l'enregistrement des résultats au fur et a mesure de l'exécution de la simulation (enregistrement a intervalle de temps régulier),et les \emph{scalar files} qui servent a enregistrer des statistiques a la fin de l'exécution de la simulation.L'utilisateur peut définir ses propres formats de fichiers pour la sauvegarde des résultats.L'IDE fournit avec Omnet++ offre un environnement riche pour l'analyse de ces fichiers de résultat.
 
 \section{Présentation de Castalia}
-Castalia est un simulateur pour les RCSFs,les réseaux BAN\footnote{} (Body Area Nerworks),et plus généralement les réseaux contenants des dispositifs travaillant a une faible puissance.
+Castalia est un simulateur pour les RCSFs,les réseaux BAN (Body Area Nerworks),et plus généralement les réseaux contenants des dispositifs travaillant a une faible puissance.
 
 Castalia est basé sur Omnet++ et peut être utilisé pour tester les algorithmes/protocoles  distribués, en offrant des modèles réalistes du canal de communication sans fils et de la transmission radio,avec un comportement réaliste des nœuds capteurs.
 De plus,vu qu'il est hautement paramétrable ,Castalia peut être utilisé pour tester l'influence de différents paramètres et caractéristiques sur le fonctionnement d'une application spécifique. 
@@ -439,7 +438,7 @@ Les principales caractéristiques de Castalia sont:
 \item Un modèle détaillé de la transmission  radio basé sur des radios réels pour les communications a basse puissance
 	\begin{itemize}
 		
-	\item La probabilité de la réception est basée sur le SINR\footnote{},la taille du paquet et le type de modulation(les modulations PSK et FSK sont supportées et l'utilisateur peut définir des schémas de modulation personnalisées)
+	\item La probabilité de la réception est basée sur le SINR,la taille du paquet et le type de modulation(les modulations PSK et FSK sont supportées et l'utilisateur peut définir des schémas de modulation personnalisées)
 	\item L'utilisateur peut définir différents niveaux de puissances de transmission,ces puissances peuvent varier d'un nœud a l'autre
 	\item La possibilité de définir plusieurs états dans lesquelles un nœud capteur peut se trouver,avec différentes consommations énergétiques et des délai de commutation en eux
 	\item Une modélisation réaliste de la détection de la porteuse  

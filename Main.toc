@@ -13,34 +13,34 @@
 \contentsline {section}{\numberline {2.7}Un mod\IeC {\`e}le g\IeC {\'e}n\IeC {\'e}rique pour la simulation des RCSFs}{6}
 \contentsline {subsection}{\numberline {2.7.1}Le mod\IeC {\`e}le du r\IeC {\'e}seau}{6}
 \contentsline {subsubsection}{Les n\IeC {\oe }uds capteurs(nodes)}{6}
-\contentsline {subsubsection}{L'environnement}{7}
+\contentsline {subsubsection}{L'environnement}{6}
 \contentsline {subsubsection}{Le canal radio}{7}
 \contentsline {subsubsection}{Les stations de base(sink nodes)}{7}
 \contentsline {subsubsection}{Les agents}{7}
 \contentsline {subsection}{\numberline {2.7.2}Le mod\IeC {\`e}le du n\IeC {\oe }ud}{7}
 \contentsline {section}{\numberline {2.8}Les outils de simulation existants}{8}
-\contentsline {subsection}{\numberline {2.8.1}Type de simulateurs}{9}
+\contentsline {subsection}{\numberline {2.8.1}Type de simulateurs}{8}
 \contentsline {subsection}{\numberline {2.8.2}\IeC {\'E}valuation des simulateurs}{9}
-\contentsline {subsubsection}{Disponibilit\IeC {\'e} et r\IeC {\'e}utilisabilit\IeC {\'e}}{10}
+\contentsline {subsubsection}{Disponibilit\IeC {\'e} et r\IeC {\'e}utilisabilit\IeC {\'e}}{9}
 \contentsline {subsubsection}{Performance et \IeC {\'e}volutivit\IeC {\'e} }{10}
 \contentsline {subsubsection}{Support des langages de programmation riches en fonctionnalit\IeC {\'e}s}{10}
-\contentsline {subsubsection}{Support d'une interface graphique et d'un environnement de d\IeC {\'e}bogage}{11}
+\contentsline {subsubsection}{Support d'une interface graphique et d'un environnement de d\IeC {\'e}bogage}{10}
 \contentsline {subsection}{\numberline {2.8.3}Pr\IeC {\'e}sentation de quelques outils de simulation existants}{11}
-\contentsline {subsubsection}{NS-2}{12}
-\contentsline {subsubsection}{Omnet++ et Castalia}{13}
+\contentsline {subsubsection}{NS-2}{11}
+\contentsline {subsubsection}{Omnet++ et Castalia}{12}
 \contentsline {subsubsection}{TOSSIM}{14}
 \contentsline {subsubsection}{COOJA/MSPSim}{15}
 \contentsline {section}{\numberline {2.9}Pr\IeC {\'e}sentation d'Omnet++}{15}
-\contentsline {subsection}{\numberline {2.9.1}Concepts de mod\IeC {\'e}lisation }{17}
-\contentsline {subsubsection}{G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{17}
+\contentsline {subsection}{\numberline {2.9.1}Concepts de mod\IeC {\'e}lisation }{16}
+\contentsline {subsubsection}{G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s}{16}
 \contentsline {subsubsection}{Imbrication des modules}{18}
 \contentsline {subsubsection}{Types de modules/Types de connexions }{18}
-\contentsline {subsubsection}{Les messages}{19}
-\contentsline {subsubsection}{Mod\IeC {\'e}lisation de la transmission du paquet}{19}
+\contentsline {subsubsection}{Les messages}{18}
+\contentsline {subsubsection}{Mod\IeC {\'e}lisation de la transmission du paquet}{18}
 \contentsline {subsubsection}{Les param\IeC {\`e}tres}{19}
-\contentsline {subsubsection}{M\IeC {\'e}thode de description de la topologie}{20}
-\contentsline {subsection}{\numberline {2.9.2}Programmation des algorithmes}{20}
-\contentsline {subsection}{\numberline {2.9.3}Les interfaces utilisateur}{21}
-\contentsline {subsection}{\numberline {2.9.4}OMNET++ dans la pratique}{21}
+\contentsline {subsubsection}{M\IeC {\'e}thode de description de la topologie}{19}
+\contentsline {subsection}{\numberline {2.9.2}Programmation des algorithmes}{19}
+\contentsline {subsection}{\numberline {2.9.3}Les interfaces utilisateur}{20}
+\contentsline {subsection}{\numberline {2.9.4}OMNET++ dans la pratique}{20}
 \contentsline {section}{\numberline {2.10}Pr\IeC {\'e}sentation de Castalia}{22}
 \contentsline {subsection}{\numberline {2.10.1}Structure de Castalia}{23}
