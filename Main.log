@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.30)  7 DEC 2014 10:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.30)  7 DEC 2014 10:24
 entering extended mode
 **Main.tex
 (F:\ESI\3CS\Git_Repo\Rapport\Main.tex
@@ -508,20 +508,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip53
 )
-(F:\ESI\3CS\Git_Repo\Rapport\Main.aux
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 <
-      <<<<<< HEAD
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+(F:\ESI\3CS\Git_Repo\Rapport\Main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
@@ -619,7 +606,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapitre 1.
 [2
 
-] <Chapitre1/capteur.jpg, id=64, 516.93124pt x 318.18875pt>
+] <Chapitre1/capteur.jpg, id=144, 516.93124pt x 318.18875pt>
 File: Chapitre1/capteur.jpg Graphic file (type jpg)
 
 <use Chapitre1/capteur.jpg>
@@ -633,7 +620,7 @@ Package Fancyhdr Warning: \headheight is too small (14.49998pt):
  This may cause the page layout to be inconsistent, however.
 
 [3 <F:/ESI/3CS/Git_Repo/Rapport/Chapitre1/capteur.jpg>]
-<Chapitre1/architecture_capteur.png, id=72, 345.54094pt x 125.71968pt>
+<Chapitre1/architecture_capteur.png, id=152, 345.54094pt x 125.71968pt>
 File: Chapitre1/architecture_capteur.png Graphic file (type png)
 
 <use Chapitre1/architecture_capteur.png>
@@ -641,7 +628,7 @@ Package pdftex.def Info: Chapitre1/architecture_capteur.png used on input line
 54.
 (pdftex.def)             Requested size: 241.877pt x 88.00316pt.
  [4 <F:/ESI/3CS/Git_Repo/Rapport/Chapitre1/architecture_capteur.png>]
-<Chapitre1/wsn_archi.png, id=80, 471.26062pt x 222.8325pt>
+<Chapitre1/wsn_archi.png, id=160, 471.26062pt x 222.8325pt>
 File: Chapitre1/wsn_archi.png Graphic file (type png)
 
 <use Chapitre1/wsn_archi.png>
@@ -702,7 +689,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-<Chapitre1/pile.png, id=91, 454.69875pt x 398.99063pt>
+<Chapitre1/pile.png, id=171, 454.69875pt x 398.99063pt>
 File: Chapitre1/pile.png Graphic file (type png)
 
 <use Chapitre1/pile.png>
@@ -770,25 +757,14 @@ Overfull \hbox (6.20274pt too wide) in paragraph at lines 65--65
 []\T1/cmr/bx/n/17.28 Un mo-dèle gé-né-rique pour la si-mu-la-tion des RCSFs 
  []
 
-[12]
-Runaway argument?
-{\@firstoffive }\fi  on trouve un modÃ¨le gÃ©nÃ©rique pour les RCSFs \ETC.
-! Paragraph ended before \Hy@setref@link was complete.
-<to be read again> 
-                   \par 
-l.69 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-<netModel.png, id=128, 387.69844pt x 194.22563pt>
+[12] <netModel.png, id=203, 387.69844pt x 194.22563pt>
 File: netModel.png Graphic file (type png)
  <use netModel.png>
 Package pdftex.def Info: netModel.png used on input line 72.
 (pdftex.def)             Requested size: 271.38704pt x 135.957pt.
- [13 <F:/ESI/3CS/Git_Repo/Rapport/netModel.png>]
-<nodeModel.png, id=140, 388.45125pt x 380.17032pt>
+
+[13 <F:/ESI/3CS/Git_Repo/Rapport/netModel.png>]
+<nodeModel.png, id=213, 388.45125pt x 380.17032pt>
 File: nodeModel.png Graphic file (type png)
  <use nodeModel.png>
 Package pdftex.def Info: nodeModel.png used on input line 96.
@@ -797,73 +773,38 @@ Package pdftex.def Info: nodeModel.png used on input line 96.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Runaway argument?
-{\@firstoffive }\fi . \begin {enumerate} \item \textbf {Le tiers des \ETC.
-! Paragraph ended before \Hy@setref@link was complete.
-<to be read again> 
-                   \par 
-l.110 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-[14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15 <F:/ESI/3CS/Git_Repo/Rapport/nodeModel.png>]
+[14] [15 <F:/ESI/3CS/Git_Repo/Rapport/nodeModel.png>]
 Overfull \hbox (1.62949pt too wide) in paragraph at lines 148--149
 \T1/cmr/m/n/12 rale,incluent une im-plé-men-ta-tion plus ou moins com-plète de 
 la pile de pro-to-cole TCP/IP,
  []
 
-
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
- [16]
+[16] [17]
 Overfull \hbox (7.1252pt too wide) in paragraph at lines 175--177
 \T1/cmr/m/n/12 de pe-tites ex-pé-ri-men-ta-tions, et la com-po-si-tion de mo-du
 les ba-siques.Cependant,pour
  []
 
-[17]
+
 Overfull \hbox (29.42249pt too wide) in paragraph at lines 191--192
 \T1/cmr/m/n/12 teur de Ti-nyOS,le sys-tème d'ex-ploi-ta-tion le plus uti-lisé d
 ans les RCSFs.COOJA/MSPSim,sont
  []
 
-
+[18]
 Overfull \hbox (11.2964pt too wide) in paragraph at lines 204--205
 []\T1/cmr/m/n/12 L'outil nam per-met la vi-sua-li-sa-tion gra-phique de la pro-
 gres-sion de la si-mu-la-tion.Durant
  []
 
-[18] <castaliaModel.png, id=176, 425.33907pt x 283.0575pt>
+[19] <castaliaModel.png, id=254, 425.33907pt x 283.0575pt>
 File: castaliaModel.png Graphic file (type png)
 
 <use castaliaModel.png>
 Package pdftex.def Info: castaliaModel.png used on input line 224.
 (pdftex.def)             Requested size: 340.2717pt x 226.44629pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20 <F:/ESI/3CS/Git_Repo/Rapport/castaliaModel.png>] [21] [22]
-Runaway argument?
-{\@firstoffive }\fi  reprÃ©sente des modules simple(arriÃ¨re plan gri\ETC.
-! Paragraph ended before \Hy@setref@link was complete.
-<to be read again> 
-                   \par 
-l.303 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-<simpleCompound.png, id=200, 487.06969pt x 215.30438pt>
+ [20 <F:/ESI/3CS/Git_Repo/Rapport/castaliaModel.png>]
+[21] [22] <simpleCompound.png, id=272, 487.06969pt x 215.30438pt>
 File: simpleCompound.png Graphic file (type png)
 
 <use simpleCompound.png>
@@ -877,90 +818,77 @@ Overfull \hbox (5.02739pt too wide) in paragraph at lines 345--346
  []
 
 [25] [26] [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
 Overfull \hbox (19.39314pt too wide) in paragraph at lines 425--427
 []\T1/cmr/m/n/12 Castalia est basé sur Om-net++ et peut être uti-lisé pour tes-
 ter les al-go-rithmes/protocoles
  []
 
-[28]
-Runaway argument?
-{\@firstoffive }\fi  montre l'architecture basique d'un RCSFs dans Ca\ETC.
-! Paragraph ended before \Hy@setref@link was complete.
-<to be read again> 
-                   \par 
-l.460 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
 
-Runaway argument?
-{\@firstoffive }\fi  dans la page \pageref {castaliaModel} montre la \ETC.
-! Paragraph ended before \Hy@setref@link was complete.
-<to be read again> 
-                   \par 
-l.464 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+LaTeX Warning: Reference `basicStructCastalia' on page 29 undefined on input li
+ne 455.
 
-) (F:\ESI\3CS\Git_Repo\Rapport\Bibliographie/Bibliographie.tex
-(F:\ESI\3CS\Git_Repo\Rapport\Main.bbl [29]
+<basicStructCastalia.png, id=313, 508.90125pt x 288.3272pt>
+File: basicStructCastalia.png Graphic file (type png)
+
+<use basicStructCastalia.png>
+Package pdftex.def Info: basicStructCastalia.png used on input line 457.
+(pdftex.def)             Requested size: 356.22844pt x 201.82765pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[29]) (F:\ESI\3CS\Git_Repo\Rapport\Bibliographie/Bibliographie.tex
+(F:\ESI\3CS\Git_Repo\Rapport\Main.bbl [30 <F:/ESI/3CS/Git_Repo/Rapport/basicStr
+uctCastalia.png>]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
- [30
+ [31
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
  (F:\ESI\3CS\Git_Repo\Rapport\Main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: 19C1185E098AE06BDB18E7914AE953D5;2559.
 
 
-Package rerunfilecheck Warning: File `Main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `Main.out':
-(rerunfilecheck)             Before: E3488EFFDC98987DF71EB639B0BE78CA;956
-(rerunfilecheck)             After:  19C1185E098AE06BDB18E7914AE953D5;2559.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
- )
-(\end occurred when \ifx on line 463 was incomplete)
-(\end occurred when \ifx on line 455 was incomplete)
-(\end occurred when \ifx on line 302 was incomplete)
-(\end occurred when \ifx on line 100 was incomplete)
-(\end occurred when \ifx on line 68 was incomplete) 
+ ) 
 Here is how much of TeX's memory you used:
- 6864 strings out of 493921
- 98668 string characters out of 3144863
- 191103 words of memory out of 3000000
- 9957 multiletter control sequences out of 15000+200000
+ 6894 strings out of 493921
+ 99149 string characters out of 3144863
+ 191238 words of memory out of 3000000
+ 9981 multiletter control sequences out of 15000+200000
  13909 words of font info for 33 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  31i,12n,43p,948b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Anonymous\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\Ano
-nymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk>
- <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\ecbx1440.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
-appen\ec\dpi600\ecbx1200.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Anonymous\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\Anonymous\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Main.pdf (30 pages, 672844 bytes).
+ <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
+600\ecti1200.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\eccc1200.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Anonymous\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Anonymous\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Us
+ers\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2
+488.pk> <C:\Users\Anonymous\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr12.pfb>
+Output written on Main.pdf (31 pages, 720910 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 699 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 
