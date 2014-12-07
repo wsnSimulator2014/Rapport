@@ -9,4 +9,24 @@
 \BOOKMARK [2][-]{subsection.1.4.2}{Contraintes de conception des RCSFs }{section.1.4}% 9
 \BOOKMARK [2][-]{subsection.1.4.3}{Domaines d'application des RCSFs}{section.1.4}% 10
 \BOOKMARK [2][-]{subsection.1.4.4}{La communication dans les RCSFs}{section.1.4}% 11
-\BOOKMARK [0][-]{chapter.2}{G\351n\351ralit\351s sur les simulateurs r\351seaux}{}% 12
+\BOOKMARK [0][-]{chapter.2}{G\351n\351ralit\351s sur la simulation}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Probl\351matique}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{D\351finition de la simulation }{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Type de simulations}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{La simulation et l'\351mulation}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{Avantages de la simulation de RCSFs}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.6}{Exigences d'une simulation}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.7}{Un mod\350le g\351n\351rique pour la simulation des RCSFs}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.7.1}{Le mod\350le du r\351seau}{section.2.7}% 20
+\BOOKMARK [2][-]{subsection.2.7.2}{Le mod\350le du n\234ud}{section.2.7}% 21
+\BOOKMARK [1][-]{section.2.8}{Les outils de simulation existants}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.8.1}{Type de simulateurs}{section.2.8}% 23
+\BOOKMARK [2][-]{subsection.2.8.2}{\311valuation des simulateurs}{section.2.8}% 24
+\BOOKMARK [2][-]{subsection.2.8.3}{Pr\351sentation de quelques outils de simulation existants}{section.2.8}% 25
+\BOOKMARK [1][-]{section.2.9}{Pr\351sentation d'Omnet++}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.9.1}{Concepts de mod\351lisation }{section.2.9}% 27
+\BOOKMARK [2][-]{subsection.2.9.2}{Programmation des algorithmes}{section.2.9}% 28
+\BOOKMARK [2][-]{subsection.2.9.3}{Les interfaces utilisateur}{section.2.9}% 29
+\BOOKMARK [2][-]{subsection.2.9.4}{OMNET++ dans la pratique}{section.2.9}% 30
+\BOOKMARK [1][-]{section.2.10}{Pr\351sentation de Castalia}{chapter.2}% 31
+\BOOKMARK [2][-]{subsection.2.10.1}{Structure de Castalia}{section.2.10}% 32

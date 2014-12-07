@@ -26,7 +26,7 @@ Il existe deux types de simulations:
 
 Dans une simulation a événements discrets,l'état du système est représenté par une séquence chronologique d'événements discrets.Chaque événement arrive a un instant donné et modifie l'état du système.Dans ce type de simulation,il faut qu'il se passe quelque chose pour que l'on observe et que l’on prenne des décisions. Ce sont ces instants de modification de l’état du système que l’on appelle événement.
 
-A l'opposé de cette simulation se trouve la simulation continu qui ne prend pas en compte la notion d'événement mais découpe plutôt l'intervalle de temps en tranches égales ($\Delta t$),
+A l'opposé de cette simulation se trouve la simulation continu qui ne prend pas en compte la notion d'événement mais découpe plutôt l'intervalle de temps en tranches égales (delta),
 et a chaque intervalle de temps, l'état du système est déterminé.Un tel système peut se formaliser par des équations mathématiques(une étude analytique peut être faite).
 
 L'exemple typique d'une simulation a  états discrets est le système de péage dans une autoroute,ou chaque voiture qui passe par le système est un événement qui change l'état du système (l'état du système est le nombre de voiture ayant passé par le système).Si aucune voiture ne se présente, il n'y a pas d'événements et le système ne change pas.Il peut se passer beacoup ou très peu de temps entre deux événements,et on connais pas a l'avance le nombre d'événements que comportera la simulation. 

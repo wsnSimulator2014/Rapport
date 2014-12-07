@@ -1,51 +1,29 @@
-\documentclass[twoside,12pt]{report}
+\documentclass[oneside,12pt]{report}
 
 \usepackage[utf8]{inputenc} % un package pour utliser tous les caractères de votre clavier
 \usepackage[T1]{fontenc} % un second package pour le font
 \usepackage[francais]{babel} % un troisième package pour dire à latex que vous écrivez en français
 \usepackage{fancyhdr}
 \usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
-
 \usepackage[french]{nomencl}
-<<<<<<< HEAD
-% * <am_rahal@esi.dz> 2014-11-27T16:33:16.884Z
-=======
 \usepackage[]{graphicx}
 % * <am_rahal@esi.dz> 2014-11-27T16:33:16.884Z:
->>>>>>> 99163397f76421fd03f37178fa50a7ded25b153f
 %ce package permet de gérer la liste des abbréviations
 % ce lien http://www.xm1math.net/doculatex/nomenclature.html 
 % propose un tuto pour configurer Texmaker pour prendre en charge les 									
 % nomenclatures (nomenclatures)
 
-\usepackage{graphicx}
-\usepackage{color}
-\usepackage[colorlinks,linkcolor=black]{hyperref}
 \begin{document}
-
-\hypersetup{
-	%colorlinks=true, %colorise les liens(à false il les encadre)
-	breaklinks=true, %permet le retour à la ligne dans les liens trop longs
-	urlcolor= blue, %couleur des hyperliens
-	%linkcolor= blue, %couleur des liens internes
-	citecolor=black, %couleur des références
-	pdftitle={Mémoire projet de fin d'études}, %informations apparaissant dans les propriétés du document
-	pdfauthor={Mohamed Amine RAHAL, Mehdi MAICHE}, % informations sur document
-	pdfsubject={PFE}, %sous Acrobat.
-	pdfcreator={TeX Dz Group}
-}
-%------------------------------Définition d'une nouvelle commande pour mettre des remarques au sein du rapport-----
-\newcommand{\remarque}[1]{ \begin{center}\textcolor{red}{\textbf{#1}}\end{center}}
 
 %------------------------------début des page non numérotées-------------------------
 
 \pagenumbering{roman}
 \setcounter{page}{-2}
 
-%\input{PageDeGarde/PageDeGarde.tex}
-%\input{Remerciements/Remerciements.tex}
-%\input{Dedicaces/Dedicaces.tex}
-%\input{Resume/Resume}
+\input{PageDeGarde/PageDeGarde.tex}
+\input{Remerciements/Remerciements.tex}
+\input{Dedicaces/Dedicaces.tex}
+\input{Resume/Resume}
 
 
 %------------------------------fin des page non numérotées---------------------------
@@ -55,8 +33,8 @@
 
 \renewcommand{\footrulewidth}{1pt}
 
-\fancyhead[L]{\leftmark}
-%\fancyhead[C]{\thepage}
+\fancyhead[L]{\rightmark}
+\fancyhead[C]{\thepage}
 \fancyhead[R]{\thechapter}
 
 \fancyfoot[L]{}
@@ -67,19 +45,19 @@
 %-----------------début de la numérotation avec les chiffres romains-----------------
 
 
-%\tableofcontents
+\tableofcontents
 
-%\listoftables
+\listoftables
 
-%\listoffigures 
+\listoffigures 
 
-%\printnomenclature
+\printnomenclature
 
 %-----------------fin de la numérotation avec les chiffres romains-------------------
 %-----------------début de la numérotation avec les chiffres arabs-------------------
 
 
-%\input{IntroductionGenerale/IntroductionGenerale}
+\input{IntroductionGenerale/IntroductionGenerale}
 
 \pagenumbering{arabic}
 
@@ -89,13 +67,12 @@
 
 \input{Chapitre2/Chapitre2}
 
-%\input{ConclusionGenerale/ConclusionGenerale}
 
-%\input{Annexe/Annexe}
+\input{ConclusionGenerale/ConclusionGenerale}
+
+\input{Annexe/Annexe}
 
 \input{Bibliographie/Bibliographie}
-
-
 					
 					
 %-----------------fin de la numerotation avec les chiffres arabs---------------------

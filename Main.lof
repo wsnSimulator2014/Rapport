@@ -2,3 +2,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Architecture de base d'un capteur sans fil}}{3}{figure.1.1}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Un mod\IeC {\`e}le g\IeC {\'e}n\IeC {\'e}rique pour les RCSFs}}{6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces L'architecture d'un n\IeC {\oe }ud capteur}}{8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Le Mod\IeC {\`e}le d'un n\IeC {\oe }ud capteur dans Castalia}}{13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Les modules simples et compos\IeC {\'e}s}}{17}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Les modules et leurs connexions dans Castalia}}{23}
