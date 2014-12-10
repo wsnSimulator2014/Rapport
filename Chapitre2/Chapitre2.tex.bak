@@ -1,6 +1,6 @@
 
-\chapter{Généralités sur la simulation}
-\section{Problématique}
+\chapter{La simulation dans les RCSFs}
+\section{Introduction}
 Les réseaux de capteurs sans fils peuvent être considérés comme un type particulier de réseaux Ad-hoc mobile(MANET),formés par des  centaines voir des milliers de nœuds capteurs,communicants a l'aide d'une transmission sans fils.Les recherches dans le domaine des réseaux de capteurs et dans celui des réseaux ad-hoc partagent les même problématiques (topologie,routage,etc),mais les réseaux de capteurs se distingue par les caractéristiques suivantes:
 \begin{itemize}
 \item L'influence des grandeurs physiques mesurées par les capteurs sur le fonctionnement le l'application réalisée par le RCSF,et sur les différents protocoles utilisés; 
@@ -10,14 +10,15 @@ Les réseaux de capteurs sans fils peuvent être considérés comme un type part
 Les RCSFs sont formés par un très grand nombre de nœuds capteurs.Opter pour un modèle
  purement analytique des RCSFs est généralement très complexe pour ne pas dire impossible et conduit généralement a des analyses peu crédibles et beaucoup trop simplifiées.De plus, déployer un RCSF dans la réalité nécessite un effort énorme, et un cout très élevé vu le grand nombre de nœuds capteurs(qui peut varier de quelques centaines de nœuds jusqu'à des milliers).Donc,ce n'est pas raisonnable de déployer un RCSF dans la réalité seulement pour tester un nouveau protocole ou une nouvelle application, et il faudrait plutôt opter pour la simulation.   
  
-\section{Définition de la simulation }
+\section{Généralités sur la simulation}
+\subsection{Définition de la simulation }
 La simulation permet de reproduire d'une façon virtuelle une situation réel observée.On appelle un simulateur le dispositif(logicielle) qui permet de réalisé la simulation.Il présente sous des conditions contrôlables est observables l'évolution du \emph{modèle} du phénomène.S'il existe plusieurs modèles, on pourra aussi parler de \emph{système} d'une façon plus générale.
 
-Un simulateur permet donc de reproduire(simuler) un système réel avec tout les avantages et les inconvénients que cela implique.En particulier le simulateur sera utilisé quand le système réel est inobservable ou difficilement observable pour toutes sortes de raisons(dimension,sécurité,coût,inexistence...).
+Un simulateur permet donc de reproduire(simuler) un système réel avec tout les avantages et les inconvénients que cela implique.En particulier, le simulateur sera utilisé quand le système réel est inobservable ou difficilement observable pour toutes sortes de raisons(dimension,sécurité,coût,inexistence...).
 
-La simulation est universellement utilisée pour développer et tester et approuver des protocoles pour les RCSFs.Plus particulièrement,  dans la phase de conception de ces derniers.Le cout de simulation de milliers de nœuds d'un RCSF est très réduit,et la simulation peut s'exécuter dans une très courte durée.
 
-\section{Type de simulations}
+
+\subsection{Type de simulations}
 Il existe deux types de simulations:
 \begin{itemize}
 \item La simulation a événements discrets;
@@ -26,10 +27,10 @@ Il existe deux types de simulations:
 
 Dans une simulation a événements discrets,l'état du système est représenté par une séquence chronologique d'événements discrets.Chaque événement arrive a un instant donné et modifie l'état du système.Dans ce type de simulation,il faut qu'il se passe quelque chose pour que l'on observe et que l’on prenne des décisions. Ce sont ces instants de modification de l’état du système que l’on appelle événement.
 
-A l'opposé de cette simulation se trouve la simulation continu qui ne prend pas en compte la notion d'événement mais découpe plutôt l'intervalle de temps en tranches égales (delta),
+A l'opposé de ce type de simulation se trouve la simulation continu qui ne prend pas en compte la notion d'événement mais découpe plutôt l'intervalle de temps en tranches égales ($\Delta t$),
 et a chaque intervalle de temps, l'état du système est déterminé.Un tel système peut se formaliser par des équations mathématiques(une étude analytique peut être faite).
 
-L'exemple typique d'une simulation a  états discrets est le système de péage dans une autoroute,ou chaque voiture qui passe par le système est un événement qui change l'état du système (l'état du système est le nombre de voiture ayant passé par le système).Si aucune voiture ne se présente, il n'y a pas d'événements et le système ne change pas.Il peut se passer beacoup ou très peu de temps entre deux événements,et on connais pas a l'avance le nombre d'événements que comportera la simulation. 
+L'exemple typique d'une simulation a  événements discrets est le système de péage dans une autoroute,ou chaque voiture qui passe par le système est un événement qui change l'état du système (l'état du système est le nombre de voiture ayant passé par le système).Si aucune voiture ne se présente, il n'y a pas d'événements et le système ne change pas.Il peut se passer beacoup ou très peu de temps entre deux événements,et on connais pas a l'avance le nombre d'événements que comportera la simulation. 
 
 L'exemple typique d'une simulation continu est celui de l'eau qui chauffe.Ici l'eau chauffe en permanence,d'une façon continue, donc il n'y a pas d'événements.L'état du système -qui est la température de l'eau- peut être observé en mesurant la température toute les secondes,toutes les millisecondes, ou toutes  les minutes.Quel que soit le moment où on l’observe, l’eau aura une température en fonction de laquelle une décision pourra être prise.
   
@@ -37,57 +38,59 @@ Dans le cas d'une simulation a événements discrets,une fonction de pilotage s'
 
 
 
-\section{La simulation et l'émulation}
+\subsection{La simulation et l'émulation}
 Alors que la simulation cherche a \emph{modéliser} le fonctionnement d'un système,l'émulation consiste a se substituer a un élément matériel informatique(tel un terminal informatique,un ordinateur,ou une console de jeux) par un logiciel.
 
 L'émulation est une imitation du comportement physique d'un matériel par un logiciel,et elle n'est pas a confondre avec a simulation,laquelle vise a imiter un modèle abstrait.
 
-Dans le domaine des RCSFs,un émulateur  est un outil qui utilise le firmware ainsi que le matériel (le hardware) pour effectuer la simulation.L'émulation combine le logiciel et le matériel pour simuler un RCSF.En d'autre terme,un émulateur permet de faire coopérer de vrais nœuds capteurs avec des nœuds capteurs simulés afin de construire un RCSF.
+Dans le domaine des RCSFs,un émulateur  est un outil qui simule le firmware ainsi que le matériel (le hardware).En d'autre terme,un émulateur permet d'imiter la plateforme matériel d'un nœud capteur, en utilisant le même code source des applications et les mêmes instructions machine que celles utilisées dans de vrai nœuds capteurs. 
 %Types de simulation et types d'émulation%
 
 
-\section{Avantages de la simulation de RCSFs}
+\section{Avantages de la simulation des RCSFs}
+La simulation est universellement utilisée pour développer et tester et approuver des protocoles pour les RCSFs.Plus particulièrement,  dans la phase de conception de ces derniers.Le cout de simulation de milliers de nœuds d'un RCSF est très réduit,et la simulation peut s'exécuter dans une très courte durée.
+La simulation dans les RCSFs offre principalement les avantages suivants:
 \begin{itemize}
 
-\item La simulation peut être utilisée pour détecter et corriger des problèmes et des bugs avant de  déployer le système dans le monde réel.
+\item Elle peut être utilisée pour détecter et corriger des problèmes et des bugs avant de  déployer le système dans le monde réel.
 \item Certaines applications des RCSFs nécessitent d'opérer dans un environnement très spécifique.Par exemple, la surveillance d'une activité volcanique.Conduire des expériences dans ces environnements peut être très couteux et très dangereux ce qui est une raison de plus d'utiliser la simulation.
-\item La simulation permet de contrôler l'environnement et les conditions dans lesquelles s'effectue l'expérimentation.Par exemple,c'est possible de créer des scénarios difficiles a reproduire dans la réalité    et de répéter le même scénario de simulation plusieurs fois avec différents paramètres.   
+\item Elle permet de contrôler l'environnement et les conditions dans lesquelles s'effectue l'expérimentation.Par exemple,c'est possible de créer des scénarios difficiles a reproduire dans la réalité    et de répéter le même scénario de simulation plusieurs fois avec différents paramètres.   
 
 \end{itemize}
 \section{Exigences d'une simulation}
 La simulation est une phase essentiel dans l'étude des RCSFs étant la manière la plus commune de tester de nouvelles applications ou de nouveaux protocoles.Cependant,la simulation doit se baser sur  un modèle correcte avec des hypothèses solides et un Framework approprié pour simplifier l'implémentation.
 
-Les résultats de la simulation reposent sur le scénario mis en place. Ceci inclue les caractéristiques de l'environnement,les hypothèses concernant le matériel et les différentes couches de communication etc.Ces paramètres ne sont -généralement- pas assez précis  pour pouvoir capturer le comportement réel d'un RCSF,mettant ainsi en péril la crédibilité des résultats.
-De l'autre coté,l'utilisation de modèles très détaillés induit une complexité supplémentaire dans le calcule et conduit ainsi a des  problèmes de performance et de mise a l'échelle (lorsque le nombre de nœuds capteurs augmente).
+Les résultats de la simulation reposent sur le scénario mis en place. Ceci inclue les caractéristiques de l'environnement,les hypothèses concernant le matériel et les différentes couches de communication etc.Ces paramètres ne sont généralement pas assez précis  pour pouvoir capturer le comportement réel d'un RCSF,mettant ainsi en péril la crédibilité des résultats.
+De l'autre coté,l'utilisation de modèles très détaillés induit une complexité supplémentaire dans le calcule et conduit ainsi a des  problèmes de performance et de scalabilité (lorsque le nombre de nœuds capteurs augmente).
 
-De ce fait,Un compromis doit être fait entre la précision (le niveau de détail) et l'évolutivité (la mise a l'échelle).Ce compromis est un critère primordiale lors de la simulation d'un RCSF.
+De ce fait,Un compromis doit être fait entre la précision (le niveau de détail) et l'évolutivité (la scalabilité).Ce compromis est un critère primordiale lors de la simulation d'un RCSF.
 
 \section{Un modèle générique  pour la simulation des RCSFs}
-Avec le développement des outils de simulation pour les RCSFs,leurs modèles ont été introduits.Ces modèles incluent de nouveaux composants qui n'étaient pas présents dans les simulateurs de réseaux classiques,comme des modèles détaillés de la consommation énergétique et de l'environnement dans lequel opère un RCSF.
+Avec le développement des outils de simulation pour les RCSFs,leurs modèles ont été introduits.Ces modèles incluent de nouveaux composants qui n'étaient pas présents dans les simulateurs des réseaux classiques,comme des modèles détaillés de la consommation énergétique et de l'environnement dans lequel opère un RCSF.
 
-Dans la figure \ref{netModel} on trouve un modèle générique pour les RCSFs (l'architecture d'un RCSF du point de vue d'un simulateur) qu'on va essayer de détailler par la suite.
+La figure \ref{netModel} montre un modèle générique pour un RCSF (l'architecture d'un RCSF du point de vue d'un simulateur) qu'on va essayer de détailler par la suite.
 
 \begin{figure}[!h]
+\includegraphics[scale=0.8]{netModel}
 \caption{\label{netModel}Un modèle générique pour les RCSFs}
-\includegraphics[scale=0.7]{netModel}
 \end{figure}
 
 \subsection{Le modèle du réseau}
 \subsubsection{Les nœuds capteurs(nodes)}
-chaque nœud capteur est un périphérique physique capturant un ensemble de grandeurs physiques.Les nœuds communiquent entre eux a l'aide d'un canal radio.a l'intérieur de chaque nœud, une pile de protocoles semblable a celle du modèle OSI contrôle la communication.a l'encontre des modèles classiques des réseaux sans fils,les nœuds capteurs incluent un second groupe de composants qui sont les capteurs physiques(qui capturent les grandeurs physiques) et qui sont connecter a l'environnement(pour la détection de stimulus).
+chaque nœud capteur est un périphérique physique capturant un ensemble de grandeurs physiques.Les nœuds communiquent entre eux a l'aide d'un canal radio.a l'intérieur de chaque nœud, une pile de protocoles semblable a celle du modèle OSI contrôle la communication.A l'encontre des modèles classiques des réseaux sans fils,les nœuds capteurs incluent un second groupe de composants qui sont les unités de capture(qui capturent les grandeurs physiques) et qui sont connecter a l'environnement pour la détection de stimulus.
 
 Les nœuds sont positionnés dans un environnement a deux ou a trois dimensions,un composant topologique additionnel(le composant de la mobilité) gère les coordonner du nœud dans l'environnement.Selon l'application,Le nombre de nœuds capteurs dans un RCSF  peut aller de quelques nœuds jusqu'à plusieurs milliers de nœuds.
 \subsubsection{L'environnement}
 Ce composant simule la génération et la propagation d' événements(les stimulus) qui sont détectés par les nœuds capteurs et qui déclenche une réaction de ces derniers(généralement une série de communication entre les nœuds du réseau).Les événements sont des grandeurs physiques comme du son,des ondes séismiques ou de la température.
 \subsubsection{Le canal radio}
-Le canal radio  simule la propagation des signaux radio entre les nœuds du réseau.Les modèles les plus détaillés incluent un composant de terrain (qui simule un vrai terrain avec les obstacles qui peuvent y figurer) connecté a l'environnement et au canal radio.Ce composant est pris en considération lors du calcule de la propagation des signaux dans le canal radio et influence aussi les grandeurs physiques mesurées.
+Le canal radio  simule la propagation des signaux radio entre les nœuds du réseau.Les modèles les plus détaillés incluent un composant de terrain ,qui simule un vrai terrain avec les obstacles qui peuvent y figurer et qui est connecté a l'environnement et au canal radio.Ce composant est pris en considération lors du calcule de la propagation des signaux dans le canal radio et influence aussi les grandeurs physiques mesurées.
 
 \subsubsection{Les stations de base(sink nodes)}
 Ce sont des nœuds spéciales qui ,s'ils sont présents ,reçoivent des données a partir des nœuds du réseaux et les traite(les agrège).Ils peuvent aussi envoyer des requêtes aux nœuds capteurs
-afin de les interroger sur un événement particulier.L'utilisation des stations de base ou pas, dépend de l'application qu'on veut mettre en place et des testes que l'on veut effectuer a l'aide du simulateur.
+afin de les interroger sur un événement particulier.L'utilisation des stations de base ou pas dépend de l'application qu'on veut mettre en place et des testes que l'on veut effectuer a l'aide du simulateur.
 
 \subsubsection{Les agents}
-Responsables de la génération des événements a destination des nœuds capteurs.Les agents peuvent causer une variation dans une grandeur physique,qui va se propager dans l'environnement et qui va stimuler les nœuds capteurs.Ce composant est utile lorsque son comportement peut être implémenté indépendamment de  l'environnement.Par exemple, un véhicule en mouvement.Autrement,l'environnement lui même peu générer des événements. 
+Responsables de la génération des événements a destination des nœuds capteurs.Les agents peuvent causer une variation dans une grandeur physique,qui va se propager dans l'environnement et qui va stimuler les nœuds capteurs.Ce composant est utile lorsque son comportement peut être implémenté indépendamment de  l'environnement.Par exemple, un véhicule en mouvement,autrement,l'environnement lui même peu générer des événements. 
 
 \subsection{Le modèle du nœud}
 
@@ -100,36 +103,36 @@ Responsables de la génération des événements a destination des nœuds capteu
 L'architecture du nœud peut être décomposée en trois tiers comme illustré dans la figure \ref{nodeModel}.
 \begin{enumerate}
 \item \textbf{Le tiers des protocoles:} 
-Ce tiers comprend tout les protocoles de communications.Typiquement,
-trois couche coexistent dans ce niveau.La couche MAC,la couche de routage,et la couche application.Les opérations effectuées par ce tiers dépendent généralement de l'état du tiers physique décrit ci-dessous.Par exemple, la couche réseau (la couche responsable du routage) peut prendre en considération les contraintes de la batterie pour décider de la route que va prendre le paquet.D'où,une méthode efficace d'échange d'informations entre les différents tiers doit être mise en place. 
+Ce tiers comprend tout les protocoles de communications,typiquement,
+trois couche coexistent dans ce niveau,la couche MAC,la couche de routage,et la couche application.Les opérations effectuées par ce tiers dépendent généralement de l'état du tiers physique décrit ci-dessous,par exemple, la couche réseau (la couche responsable du routage) peut prendre en considération les contraintes de la batterie pour décider de la route que va prendre le paquet.D'où,une méthode efficace d'échange d'informations entre les différents tiers doit être mise en place. 
 \item\textbf{Le tiers physique}
-Représente la plateforme matériel et ses effets sur les performances du nœud capteur.La composition de ce tiers peut changer suivant l'application implémentée par le nœud.Les éléments les plus communs de ce tiers sont: un ensemble de capteurs physiques,le module de gestion énergétique et le module de gestion de la mobilité du nœud.Les capteurs physiques simule le comportement du matériel de surveillance et de détection de stimulus.Le module énergétique simule la consommation énergétique du nœud(une problématique primordiale dans l'évaluation des RCSFs).Finalement,le module de mobilité contrôle la position du nœud capteur dans l'environnement.
+Représente la plateforme matériel et ses effets sur les performances du nœud capteur.La composition de ce tiers peut changer suivant l'application implémentée par le nœud,les éléments les plus communs de ce tiers sont: un ensemble d'unités de capture(le capteurs physiques),le module de gestion énergétique et le module de gestion de la mobilité du nœud.Les capteurs physiques simulent le comportement du matériel de surveillance et de détection de stimulus.Le module énergétique simule la consommation énergétique du nœud,et le module de mobilité contrôle la position du nœud capteur dans l'environnement.
 \item\textbf{Le tiers du média de transmission}
 C'est le lien du nœud avec le monde extérieur.Un nœud est connecté avec l'environnement par le bais d'un canal radio(pour la communication avec les autres nœuds du réseau),et d'un ou plusieurs canaux physiques (pour la réception des événements ou stimulus a partir de l'environnement).
 \end{enumerate}
 
 
-\section{Les outils de simulation existants}
+\section{Les simulateurs des RCSFs}
 
-L'accroissement de la recherche dans le domaine des RCSFs,spécialement dans ces dernières années, a conduit au développement d'une multitude de simulateurs pour les RCSFs.Les simulateurs peuvent êtres des framework(ou extensions) pour des outils de simulation existants (comme les framework Castalia et Mixim qui sont des extensions pour Omnet++), ou des simulateurs créer explicitement dans le but de simuler les RCSFs (comme TOSSIM).
+L'accroissement de la recherche dans le domaine des RCSFs,spécialement dans ces dernières années, a conduit au développement d'une multitude de simulateurs pour les RCSFs.Les simulateurs peuvent êtres des framework(extensions) pour des outils de simulation existants (comme les framework Castalia et Mixim qui sont des extensions pour Omnet++), ou des simulateurs créés explicitement dans le but de simuler les RCSFs (comme TOSSIM).
 
 
 \subsection{Type de simulateurs}
 Il existe trois types de simulateurs selon le niveau de détail qu'ils emploient pour simuler les RCSFs.
 
-le premier type sont les simulateurs a usage générale, qui se concentrent sur des aspects de haut niveau des RCSFs,comme le routage,la détection de stimulus, et le traitement de l'information, et ignorent les aspects liés au système d'exploitation du nœud et a  son architecture matériel.Ce type de simulateur est pratique pour l'évaluation des protocoles et des algorithmes de haut niveau.
+le premier type sont les simulateurs a usage générale qui se concentrent sur des aspects de haut niveau des RCSFs comme le routage,la détection des stimulus,le traitement de l'information, et ignorent les aspects liés au système d'exploitation du nœud et a  son architecture matériel.Ce type de simulateur est pratique pour l'évaluation des protocoles et des algorithmes de haut niveau.Un exemple de ce type de simulateurs est Castalia.
 
-Le second type sont les simulateurs niveau code(ou les simulateurs de code) qui permettent de développer des applications pour les RCSFs en utilisant le langage de programmation natif utilisé pour développé des application pour ce type de nœuds capteurs dans la réalité.Par exemple,le simulateur TOOSIM permet le développement d'applications pour les RCSFs en utilisant le langage de programmation NESC qui est le même utilisé dans la pratique pour développé des applications pour les nœuds capteurs de la marque MICA2.
+Le second type sont les simulateurs niveau code qui permettent de développer des applications pour les RCSFs en utilisant le langage de programmation natif utilisé pour développé des application pour ce type de capteurs dans la réalité.Par exemple,le simulateur TOOSIM permet le développement d'applications pour les RCSFs en utilisant le langage de programmation NESC qui est le même utilisé dans la pratique pour développé des applications pour les capteurs de la marque MICA2.
 Ce type de simulateur fait abstraction de l'architecture matériel du nœud et ne la prend pas en compte.Le code source de l'application et celui du système d'exploitation des nœuds capteurs simulés sont compilé suivant le code machine de la machine qui exécute le simulateur.Ce type de simulateur peut être utilisé pour la détection de bugs au niveau applicatif.
 
-Le troisième type de simulateurs sont les simulateurs niveau firmware (ou niveau instruction machine).Ce type de simulateurs prend en compte l'architecture matériel du nœud capteur,et permet de simuler de vrai nœuds capteurs jusqu'au détail des instructions machines utilisées par ces derniers(les applications sont compilées suivant le code machine du nœud capteur simulé).
+Le troisième type de simulateurs sont les simulateurs niveau firmware (ou niveau instruction machine).Ce type de simulateurs prend en compte l'architecture matériel du nœud capteur,et permet d'émuler un processeur comme celui trouvé dans de vrais nœuds capteurs et avec le même jeu d'instruction.De ce fait, les application développées dans ce type de simulateurs sont compilées suivant le code machine du nœud capteur simulé.
 Utilisant ce type de simulateurs, la plupart des bugs peuvent être détectées, et les applications a contraintes temporelles peuvent être testées.
 
 \subsection{Évaluation des simulateurs}
 Pour pouvoir évaluer et comparer les différents outils de simulation existants, des critères d'évaluation doivent être établies.Les critères les plus pertinents sont:
 \begin{itemize}
 \item La disponibilité et la réutilisabilité;
-\item La performance et l'évolutivité (la mise a l'échelle);
+\item La performance et la scalabilité;
 \item Le support de langages de programmation riche en fonctionnalités pour définir les expérimentations et traiter les résultats;
 \item Le support d'une interface graphique et d'un environnement de débogage.
 \end{itemize}
@@ -139,13 +142,13 @@ Nous allons détailler chaque critère cité précédemment, en évaluant son im
 \subsubsection{Disponibilité et réutilisabilité}
 Il y'a deux aspects clés a considérer ici:
 \begin{itemize}
-\item Est ce que l'outil de simulation inclue l'implémentation des modèles fréquemment utilisés dans la pratique (ex les modèles des protocoles MAC existants);
+\item Est ce que l'outil de simulation inclue l'implémentation des modèles fréquemment utilisés dans la pratique (par exemple les modèles des protocoles MAC existants);
 \item Avec quelle facilité pouvant nous modifier un modèle existant ou intégrer un nouveau modèle avec ceux déjà existants dans le simulateur.
 \end{itemize}
 
-La première question dépend de la durée de temps pendant laquelle le simulateur existe, et de la taille de la communauté qui l'utilise.Plus la communauté d'un simulateur est grande ,plus il y'aura des modèles disponible pour ce simulateur, et il est fort probable que s'il y'a de nouvelles propositions de modèles,celles-ci seront intégrées dans les versions a-venir du simulateur en question.
+La première question dépend de la durée de temps pendant laquelle le simulateur existe, et de la taille de la communauté qui l'utilise.Plus la communauté d'un simulateur est grande ,plus il y'aura des modèles disponible pour ce simulateur, et il est fort probable que s'il y'a de nouvelles propositions de modèles,celles-ci seront intégrées dans les prochaines versions du simulateur en question.
 
-Dans le même contexte,il faudrait citer que tout les simulateurs a usage générale,incluent une implémentation plus ou moins complète de la pile de protocole TCP/IP, et doivent aussi inclure:
+Dans le même contexte,il faudrait citer que tout les simulateurs incluent une implémentation plus ou moins complète de la pile de protocole TCP/IP, et doivent aussi inclure:
 \begin{itemize}
 \item Une implémentation des protocoles de routage communément utilisés dans les RCSFs;
 \item Une implémentation des protocoles MAC communément utilisés  dans les RCSFs;
@@ -160,25 +163,25 @@ Par exemple,ces éléments sont généralement implémentés dans les simulateur
 
 \end{itemize}
 
-La deuxième question est intimement lié a la conception du simulateur.Une structure étudiée, avec des interfaces bien définies, et une haute modularité, permet a l'utilisateur de facilement rajouter ou changer une fonctionnalité au simulateur.La disponibilité de modèles prêts a l'emploi, permet a l'utilisateur de rapidement mettre en place des scénarios de simulation, et de concentrer sur des aspects plus spécifiques et plus importants dans la modélisation des RCSFs.
-\subsubsection{Performance et évolutivité }
-La performance et l'évolutivié sont deux problématiques majeurs dans le domaine de simulation des RCSFs.la première est généralement lié a l'efficacité du langage de programmation avec lequel le simulateur est développé.La deuxième est lié a la disponibilité de mémoire vive, a la capacité de calcule du processeur ,et a la taille nécessaire pour stocker les fichiers log de la simulation.
+La deuxième question est intimement liée a la conception du simulateur.Une structure étudiée, avec des interfaces bien définies, et une haute modularité, permet a l'utilisateur de facilement rajouter ou changer une fonctionnalité au simulateur.La disponibilité de modèles prêts a l'emploi, permet a l'utilisateur de rapidement mettre en place des scénarios de simulation, et de se concentrer sur des aspects plus spécifiques et plus importants dans la modélisation des RCSFs.
+\subsubsection{Performance et scalabilité }
+La performance et l'évolutivié sont deux problématiques majeurs dans le domaine de simulation des RCSFs.la première est généralement liée a l'efficacité du langage de programmation avec lequel le simulateur est développé.La deuxième est liée a la disponibilité de la mémoire vive, a la capacité de calcule du processeur et a la taille nécessaire pour stocker les fichiers log de la simulation.
 \subsubsection{Support des langages de programmation riches en fonctionnalités}
-La configuration typique d'une simulation d'un RCSF requiert de spécifier au minimum les paramètres suivants:
-combien de nœuds existent-ils dans la simulation?qu'elle est la position de chaque nœud?est-ce-que les nœuds sont mobiles?si oui,comment s'effectue ce mouvement?quel est le modèle énergétique utilisé ?combien de grandeurs physiques existent-elles dans la simulation?comment les événements sont-ils générés?qu'elle est la grandeur physique que doit détecter chaque nœud?qu'elles statistiques doit-on mesurer dans l'expérimentation?quels sont les paramètres du canal radio (canal de transmission)?.
+La configuration typique d'une simulation d'un RCSF requiert de spéci fier au minimum les paramètres suivants:
+combien de nœuds existent-ils dans la simulation?qu'elle est la position de chaque nœud?est-ce-que les nœuds sont mobiles?si oui,comment s'effectue ce mouvement?quel est le modèle énergétique utilisé ?combien de grandeurs physiques existent-elles dans la simulation?comment les événements sont-ils générés?quelle est la grandeur physique que doit détecter chaque nœud?qu'elles statistiques doit-on mesurer dans l'expérimentation?quels sont les paramètres du canal radio (canal de transmission)?.
 
-Le nombre considérable de variables intervenant dans une simulation requiert l'utilisation d'un langage de programmation approprié,avec des sémantiques de haut niveau, qui facilitent la définition des  paramètres de la simulation.
+Le nombre considérable de variables intervenant dans une simulation requiert l'utilisation d'un langage de programmation approprié avec des sémantiques de haut niveau  qui facilitent la définition des  paramètres de la simulation.
 \subsubsection{Support d'une interface graphique et d'un environnement de débogage}
 L'interface graphique est un outil intéressant dans les simulations pour les trois raisons suivantes:
 \begin{itemize}
-\item Elle constitue Une aide pour le débogage:  la façon la plus rapide et la plus pratique de détecter une anomalie dans le système simulé est de visualiser et de suivre le comportement de la simulation pas par pas.La caractéristique clé qu'une interface graphique devrait supporter est la capacité d'inspection des différents modules,des variables, et des files d'attentes des événements,tout ça en temps réel(pendant l'exécution de la simulation).Ces caractéristiques rendent les interfaces graphiques des outils très puissants pour le débogage;
+\item Elle constitue Une aide pour le débogage:  la façon la plus rapide et la plus pratique de détecter une anomalie dans le système simulé est de visualiser et de suivre le comportement de la simulation pas par pas.La caractéristique clé qu'une interface graphique devrait supporter est la capacité d'inspection des différents modules,des variables, et des files d'attentes des événements en temps réel(pendant l'exécution de la simulation).Ces caractéristiques rendent les interfaces graphiques des outils très puissants pour le débogage;
 \item L'interface graphique peut servir comme outil de modélisation et de composition graphique:
-cette caractéristique permet de faciliter et d'accélérer la mise en place de petites expérimentations, et la composition de modules basiques.Cependant,pour les simulations volumineuse(simulation a grande échelle) l'approche graphique n'est pas très approprié.
+cette caractéristique permet de faciliter et d'accélérer la construction de modules basiques, et la mise en place de petites expérimentations,cependant,pour les simulations volumineuses(avec un grand nombre de nœuds) l'approche graphique n'est pas très appropriée.
 \item L'interface graphique peut inclure des outils pour la visualisation des résultats de la simulation( même en temps réel).
 \end{itemize}
 
 \subsection{Présentation de quelques outils de simulation existants}
-Dans cette section on va présenter quelques simulateur des RCSFs utilisés dans la pratique.Notre décision de choisir ces simulateurs est justifiée par les raisons suivantes:
+Dans cette section on va présenter quelques simulateurs des RCSFs utilisés dans la pratique.Notre décision de choisir ces simulateurs est justifiée par les raisons suivantes:
 \begin{itemize}
 
 \item On a choisis les simulateurs gratuits et open source les plus utilisés dans le domaine de la recherche (surtout la recherche académique).
@@ -188,38 +191,37 @@ Dans cette section on va présenter quelques simulateur des RCSFs utilisés dans
 
 En se basant sur ces critères on a choisis quatre simulateurs :ns-2,Castalia (qui se base sur omnet++),TOSSIM,COOJA/MSPSim.
 
-NS-2 est le simulateur de réseaux le plus populaire,OMnet++ se distingue par une popularité croissante,une grande communauté et possède une structure modulaire,ce qui a permit a la communauté de chercheurs de l'enrichir avec beaucoup de modèles et de fonctionnalités, et lui donne le potentiel d'évoluer encore plus.TOOSIM est un simulateur de TinyOS,le système d'exploitation le plus utilisé dans les RCSFs.COOJA/MSPSim,sont des simulateurs du système d'exploitation Contiki avec sa popularité croissante. 
+NS-2 est le simulateur de réseaux le plus populaire,OMnet++ se distingue par une popularité croissante,une grande communauté et possède une structure modulaire ce qui a permit a la communauté de chercheurs de l'enrichir avec beaucoup de modèles et de fonctionnalités et lui donne le potentiel d'évoluer encore plus.TOOSIM est un simulateur de TinyOS,le système d'exploitation le plus utilisé dans les RCSFs.COOJA/MSPSim,sont des simulateurs du système d'exploitation Contiki avec sa popularité croissante. 
 
 %INERNET OF THINGS%
   
  \subsubsection{NS-2}
-NS-2 est le simulateur des réseaux le plus utilisé.Il a commencé comme un simulateur de réseaux de communication classiques,le support pour les réseaux ad hoc mobile(MANET) a été ajouté ultérieurement.NS-2 est un simulateur a événement discret ,orienté-objet, écrit en c++.Il dispose d'un interpréteur de langage OTCL utilisé comme front end.
+NS-2 est le simulateur des réseaux le plus utilisé.Il a commencé comme un simulateur de réseaux de communication classiques,le support pour les réseaux ad hoc mobile(MANET) a été rajouté ultérieurement.NS-2 est un simulateur a événement discret ,orienté-objet, écrit en c++.Il dispose d'un interpréteur de langage OTCL utilisé comme front end.
 
 Le noyau de simulation(le kernel),les modèles,les protocoles et les différents composants sont implémentés en c++,mais sont aussi accessible depuis OTCL.Les scripts OTCL sont utilisés pour la configuration du simulateur,la mise en place de la topologie du réseau, la spécification des scénarios de simulation,l'enregistrement des résultats de la simulation etc.Un script OTCL typique pour une simulation d'un réseau sans fils commence avec une commande de configuration qui définie les paramètres de la couche physique,de la couche MAC ,de  la couche de routage,du modèle de propagation radio etc.
-
-L'étape suivante est la création des nœuds.Les modèles de mouvement des nœuds et du trafic du réseau sont généralement définis dans des fichiers séparés.Des outils sont disponibles pour la génération automatique de ces fichiers.
+L'étape suivante est la création des nœuds,les modèles de mouvement des nœuds et du trafic du réseau sont généralement définis dans des fichiers séparés et des outils sont disponibles pour la génération automatique de ces fichiers.
 
 Un modèle très simple de consommation énergétique est utilisé.Chaque nœud démarre avec une quantité d'énergie initiale,les quantités d'énergies dépensées lors de la transmission et la réception de paquets sont aussi définies.Après l'envoi ou la réception d'un paquet,l'énergie du nœud est décrémentée par une certaine quantité.Quand l'énergie du nœud atteint zero, le nœud en question ne pourra ni envoyer ni recevoir de nouveaux paquets  
 
-L'outil nam permet la visualisation graphique de la progression de la simulation.Durant la simulation ,NS-2 génère un fichier  contenant la trace de la simulation destiné a nam,un script OTCL est utilisé pour définir quelles informations devraient être enregistrées dans ce fichier.nam utilise les données stockées dans ce fichier pour donner une visualisation de la topologie du réseau,et pour animer la circulation des paquets.
+L'outil nam permet la visualisation graphique de la progression de la simulation.Durant la simulation ,NS-2 génère un fichier  contenant la trace de la simulation destiné a nam,un script OTCL est utilisé pour définir quelles informations devraient être enregistrées dans ce fichier.Nam utilise les données stockées dans ce fichier pour donner une visualisation de la topologie du réseau,et pour animer la circulation des paquets.
 
-L'utilisation de NS-2 comme outil de simulation pour les RCSFs possède ses inconvénients.D'abord, il n'existe pas  de modèles pour les capteurs physiques(qui détectent les grandeurs physiques),de plus, les formats de paquets et les protocoles MAC définies dans NS-2 sont différents de ceux qu'on trouve dans les RCSFs ,et le modèle de consommation énergétique est très simple.
+L'utilisation de NS-2 comme outil de simulation pour les RCSFs possède ses inconvénients:d'abord, il n'existe pas  de modèles pour les capteurs physiques(les unités de capture),de plus, les formats de paquets et les protocoles MAC définies dans NS-2 sont différents de ceux qu'on trouve dans les RCSFs et le modèle de consommation énergétique est très simple.
 
 Cependant,NS-2 est extensible et plusieurs extensions tiers on été développées pour combler les manques cités précédemment.MANNASIM ajoute par exemple: un modèle de capteurs physiques,beaucoup de modèles d'applications,une implémentation du protocole de routage LEACH,un modèle des capteurs de la marque MICA2 et une interface graphique pour créer automatiquement des scripts OTCL.
 
 \subsubsection{Omnet++ et Castalia}
-Un autre simulateur a événements discrets est Omnet++.Ce n'est pas un simulateur spécifique aux réseaux de capteurs et ce n'est pas non plus un simulateur spécifique aux réseaux de communications,mais une plateforme pour le développement de simulateurs, dans laquelle plusieurs groupes peuvent construire leur propres simulateurs.Comme l'utilisation la plus répandu d'Omnet++ est la construction de simulateurs pour les réseaux de communication,il est communément décrit comme un simulateur de réseaux.
+Un autre simulateur a événements discrets est Omnet++.Ce n'est pas un simulateur spécifique aux réseaux de capteurs et ce n'est pas non plus un simulateur spécifique aux réseaux de communications,mais une plateforme pour le développement de simulateurs dans laquelle plusieurs groupes peuvent construire leur propres simulateurs.Comme l'utilisation la plus répandu d'Omnet++ est la construction de simulateurs pour les réseaux de communication,il est communément décrit comme un simulateur de réseaux.
 
-Un simulateur basé sur Omnet++ est construit a partir d'éléments appelés modules.Les modules simples ou \emph{simple modules}(leur appellation dans le vocabulaire d'Omnet++) sont les briques de base de la simulation, et leur comportement est définie avec du C++.Les modules composés ou \emph{Compound modules} sont obtenues par l'imbrication d'autres modules (simples ou composés) liés entre eux par des connexions.Le Module composé de plus haut niveau est le réseau \emph{network module}.
+Un simulateur basé sur Omnet++ est construit a partir d'éléments appelés modules.Les modules simples ou \emph{simple modules}(leur appellation dans le vocabulaire d'Omnet++) sont les briques de base de la simulation et leur comportement est définie avec du C++.Les modules composés ou \emph{Compound modules} sont obtenues par l'imbrication d'autres modules (simples ou composés) liés entre eux par des connexions.Le Module composé de plus haut niveau est le réseau (\emph{network module}).
 
 Les différents modules communiquent entre eux a l'aide de messages, qui sont soit envoyer a travers la chaine de connexions entre les modules,soit  directement a partir d'un module vers un autre.
 La définition des modules simples,des modules composés et de la topologie du réseau est réalisée en utilisant un langage déclaratif appelé NED.Les paramètres de la simulation sont définit dans un fichier de configuration(généralement nommé omnetpp.ini ).
 
-OMNET++ inclue un environnement de développement intégré (IDE) basé sur l'IDE eclipe, qui simplifie  la programmation des modules en offrant un support pour le langage C++.Il offre aussi un support pour la rédaction des fichiers NED(fichiers avec extension ".ned") et des fichiers de configuration (fichiers avec extension ".ini") en intégrant des outils pratiques comme la colorisation des mots clés,l'auto-complétion,le débogage des programmes c++ etc.
+OMNET++ inclue un environnement de développement intégré (IDE) basé sur l'IDE eclipe, qui simplifie  la programmation des modules en offrant un support pour le langage C++,il offre aussi un support pour la rédaction des fichiers NED(fichiers avec extension ".ned") et des fichiers de configuration (fichiers avec extension ".ini") en intégrant des outils pratiques comme la colorisation des mots clés,l'auto-complétion,le débogage des programmes C++ etc.
 
 Tkenv est le nom de l'interface graphique utilisée pour l'exécution de la simulation.C'est un outil très puissant qui permet de visualiser  l'exécution de la simulation en représentant la circulation des messages entre les nœuds du réseau avec des animations.Elle permet aussi la visualisation du changement d'état de chaque objet dans la simulation , la visualisation des résultats de la simulation et l'analyse de ces derniers.
 
-Un exemple de simulateurs de RCSFs construit avec Omnet++ est Castalia .C'est un simulateur a usage générale prévu pour faire le test et la validation des algorithmes de haut niveau(algorithmes de routage,algorithmes de la couche MAC) avant de passer a leurs implémentation sur une plateforme spécifique.
+Un exemple de simulateurs de RCSFs construit avec Omnet++ est Castalia .C'est un simulateur de haut niveau prévu pour faire le test et la validation des algorithmes de haut niveau(algorithmes de routage,algorithmes de la couche MAC) avant de passer a leurs implémentation sur une plateforme spécifique.
 \begin{figure}[!h]
 \includegraphics[scale=0.8]{castaliaModel}
 \caption{\label{castaliaModel}Le Modèle d'un nœud capteur dans Castalia}
@@ -230,24 +232,21 @@ Dans Castalia, les nœuds capteurs sont implémentés comme des modules composé
 \item L'application;
 \item Les capteurs physiques(\emph{sensors manager});
 \item L'antenne radio (émetteur/récepteur des signaux radios);
-\item Le gestionnaire de ressources,qui incluent la batterie ,le processeur ,et la mémoire.Et qui communique avec tout les autres modules;
+\item Le gestionnaire de ressources qui incluent la batterie ,le processeur ,et la mémoire,et qui communique avec tout les autres modules;
 \item Le gestionnaire de mobilité qui s'occupent de gérer la mobilité du nœud et sa position dans l'environnement.
 \end{itemize}
 
-%Les nœuds sont connectés au canal de communication sans fils(\emph{wireless channel}) et aux modules représentant les processus physiques ou les grandeurs physiques\emph{physical process}.schémas
+Le module radio \iffalse (communément appelé module physique ou \emph{PHY module}) \fi simule le comportement d'une antenne radio basse puissance qui peut prendre différents états (chaqu'un d'eux travail avec une différente consommation énergétique) et différents niveaux de puissance de transmission.Le module radio effectue aussi La détection de la porteuse et la modulation,les modulations de type PSK et FSK sont supportés et l'utilisateur peut très bien définir ses propres modèle de modulation.
 
-Le module radio \iffalse (communément appelé module physique ou \emph{PHY module}) \fi simule le comportement d'une antenne radio basse puissance,qui peut prendre différents états (chaqu'un d'eux dispose d'une différente consommation énergétique) et différents niveaux de puissance de transmission.
-
-Le module radio effectue aussi La détection de la porteuse et la modulation.Les modulations de type PSK et FSK sont supportés,et l'utilisateur peut très bien définir ses propres modèle de modulation.
-
-Il y'a deux modules MAC disponible dans CASTALIA.Le premier implémente les protocoles TMAC et SMAC alors que le deuxième peut réalisé une approximation de plusieurs protocoles MAC mais ne supporte que les communications en mode broadcast.Les modules radio et MAC peuvent être contrôlés a partir de l'application.
+Il y'a deux modules MAC disponible dans CASTALIA.
+,le premier implémente les protocoles TMAC et SMAC alors que le deuxième peut réalisé une approximation de plusieurs protocoles MAC mais ne supporte que les communications en mode broadcast.Les modules radio et MAC peuvent être contrôlés a partir de l'application.
 
 Les grandeurs physiques a détecter (les stimulus) sont modélisées par des processus physiques qui peuvent se déplacer et changer de valeur.Les effets de  bruit et de  diffusion sont pris en considération lors de la détection de ces grandeurs physiques.
 
 Le modèle énergétique utilisé est très simple,il est comparable a celui utilisé par NS-2.
 
 \subsubsection{TOSSIM}
-TOSSIM est un simulateur niveau code,a événement discret, pour la simulation des RCSFs qui utilisent TinyOS comme système d'exploitation(la plupart des nœuds capteurs existants).Au lieu de compiler une application pour TinyOS sur un vrai nœud capteur,l'utilisateur peut la compiler dans TOSSIM qui s'exécute sur un PC.Ceci permet a l'utilisateur de faire le test,le débogage et l'analyse des algorithmes dans un environnement contrôlable et reproduisible.
+TOSSIM est un simulateur niveau code,a événement discret, pour la simulation des nœuds capteurs qui utilisent TinyOS comme système d'exploitation(la plupart des nœuds capteurs existants).Au lieu de compiler une application pour TinyOS sur un vrai nœud capteur,l'utilisateur peut la compiler dans TOSSIM qui s'exécute sur un PC,et ceci permet a l'utilisateur de faire le test,le débogage et l'analyse des algorithmes dans un environnement contrôlable et reproduisible.
 
 Le but principale de TOSSIM est de fournir une simulation aussi fidèle que possible des applications de TinyOS.Pour cette raison, il se concentre beaucoup plus sur la simulation de TinyOS et sur son exécution plutôt qu'a la simulation du monde réel.Bien que TOSSIM peut être utilisé pour comprendre les causes d'un comportement observé dans le monde réel,il ne peut pas capturer toutes les causes,et il ne doit par être utilisé pour faire des assertions absolues.
 
@@ -256,14 +255,14 @@ TOSSIM permet la simulation des applications de TinyOS en remplaçant quelques c
 TOSSIM possède trois lacunes.D'abord,tout les nœuds simulés doivent exécuter la même application.De plus,TOSSIM ne prend pas en compte la consommation énergétique (bien qu'il existe l'extension "PowerTOSSIM" qui permet de régler ça).
 
 \subsubsection{COOJA/MSPSim}
-COOJA/MSPSim sont des simulateurs inclus dans la distribution du système d'exploitation pour nœuds capteurs: Contiki.MSPSim peut être intégré dans COOJA formant ainsi COOJA/MSPSim.
+COOJA/MSPSim sont des simulateurs inclus dans la distribution du système d'exploitation pour les capteurs sans fils Contiki.MSPSim peut être intégré dans COOJA formant ainsi COOJA/MSPSim.
 
 MSPSim est un simulateur niveau firmware basé sur le jeux d'instruction du microcontrôleur \emph{Texas Instruments MSP430}.Il combine l'interprétation des instructions CPU avec la simulation a événements discrets des autre composants.
 
 COOJA est un simulateur niveau code pour les RCSFs avec des nœuds utilisant Contiki comme système d'exploitation.des nœuds avec différentes  plateformes matériels et exécutant différents applications peuvent coexister dans le même simulation.
 
-la combinaison COOJA/MSPSim peut simuler des nœuds capteurs sur les trois niveaux de détails cités précédemment(haut niveau,niveau code,niveau firmware).De plus,des nœuds simulés sur différents niveaux de détails peuvent coexister et interagir dans la même simulation. 
-Cette fonctionnalité est appelée \emph{cross level simulation} et est l'une des points forts de COOJA/MSPSim.
+La combinaison COOJA/MSPSim peut simuler des nœuds capteurs sur les trois niveaux de détails cités précédemment(haut niveau,niveau code,niveau firmware).De plus,des nœuds simulés sur différents niveaux de détails peuvent coexister et interagir dans la même simulation,
+cette fonctionnalité est appelée \emph{cross level simulation} et est parmi les points forts de COOJA/MSPSim.
 
 \section{Présentation d'Omnet++}
 Comme notre travail est basé sur Omnet++ nous allons donner dans cette section une description de cet outil de simulation.
@@ -279,21 +278,19 @@ Omnet++ peut être utilisé (et il est utilisé ) dans divers domaines:
 \item D'une façon générale la modélisation et la simulation de n'importe quel système pouvant être simulé en utilisant l'approche de simulation a événements discrets, et qui peut être représenté par un ensemble d'entités communicants par l'échange de messages.
 \end{itemize}
 
-OMNET++, en lui même,n'est pas un simulateur d'un système en particulier,mais plutôt,il fournit une infrastructure et des outils pour le développement de simulateurs.L'un des ingrédients fondamentaux de cette infrastructure est son architecture a base de composants.Les modèles sont assemblés a partir de composants réutilisables appelés modules .Les modules bien écrits sont parfaitement réutilisables et peuvent êtres combinés de multiple façon. 
+OMNET++, en lui même,n'est pas un simulateur d'un système en particulier,mais plutôt,il fournit une infrastructure et des outils pour le développement de simulateurs.
 
-Les différents modules peuvent êtres interconnectés via leurs portes (\emph{gates}), et peuvent êtres imbriqués pour formé des modules composés.La profondeur de l'imbrication des modules n'est pas limité.
+L'un des ingrédients fondamentaux de cette infrastructure est son architecture a base de composants,les modèles sont assemblés a partir de composants réutilisables appelés modules,les différents modules peuvent êtres interconnectés via leurs portes (\emph{gates}), et peuvent êtres imbriqués pour formé des modules composés.La profondeur de l'imbrication des modules n'est pas limité.
 
 les modules communiquent par l'échange de messages et les messages peuvent transporter n'importe quelle structure de donnée.Les modules peuvent envoyé un message soit a travers un chemin prédéfini -formé d'une série de connexions entre les nœuds- ,ou directement a son destinataire (le dernier cas est particulièrement utile pour la simulation des communications sans fils).
 
-Les modules peuvent contenir des paramètres qui peuvent êtres utilisés pour personnaliser le comportement de ces modules et paramétrer la topologie du modèle.les modules au plus bas niveau de la hiérarchie(les modules atomiques) sont appelés modules simple(\emph{simple modules} dans le vocabulaire d'Omnet++) , et il encapsulent le comportement du modèle. Les modules simples sont programmés en C++ et font usage de la librairie de simulation d'Omnet++.
+Les modules peuvent contenir des paramètres qui sont utilisés pour personnaliser leur comportement et paramétrer la topologie du modèle.les modules au plus bas niveau de la hiérarchie(les modules atomiques) sont appelés modules simple(\emph{simple modules} dans le vocabulaire d'Omnet++) et il encapsulent le comportement du modèle. Les modules simples sont programmés en C++ et font usage de la librairie de simulation d'Omnet++.
 
 Les simulations construites avec Omnet++ peuvent être exécutées avec divers interfaces utilisateur.Les interfaces graphiques contenant des animations sont très utiles pour le débogage de la simulation et l'inspection des différents modules.De l'autre coté ,les interfaces en ligne de commande sont utiles pour l'exécution par lots (batch processing).
 
-OMNET++ supporte aussi les simulations parallèles distribuées.OMNET++ peut utilisé différents mécanismes pour la communication entre les différentes partitions d'une simulation parallèle distribué,par exemple MPI .Les modèles n'ont pas besoin d'une manœuvre (instrumentation) particulière  pour qu'ils puissent être exécuté en parallèle,c'est juste une question de configuration.
+OMNET++ supporte aussi les simulations parallèles distribuées,OMNET++ peut utilisé différents mécanismes pour la communication entre les différentes partitions d'une simulation parallèle distribué,par exemple MPI .Les modèles n'ont pas besoin d'une manœuvre (instrumentation) particulière  pour qu'ils puissent être exécuté en parallèle,c'est juste une question de configuration.
  
 Le simulateur ainsi que les différents outils et interfaces sont très portables et sont testés dans la plupart des systèmes  d'exploitation (Linux,Mac OS/X,Windows) et ils peuvent être recompilé (après modification) dans la plupart des système basés sur Unix.
-
-OMNEST est la version commerciale d'OMNET++ .OMNET++ est gratuit et il est utilisé uniquement a des fin académiques et a but non lucratifs ;pour une utilisation commerciale ,les licences d'OMNEST doivent être acquis.
 
 \subsection{Concepts de modélisation }
 \subsubsection{Généralités}
@@ -309,13 +306,13 @@ La figure \ref{simpleCompound} représente des modules simple(arrière plan gris
 					
 Les modules communiquent entre eux  avec des messages qui peuvent contenir n'importe quelle donnée, en plus des attributs habituels tel que l'estampille du message.Les modules envoient les données généralement a travers leurs  portes,mais il est aussi possible de les envoyer directement vers le module de destination(sans passer par les portes).Les portes sont les interfaces d'entrée et de sortie des modules,les messages sont -généralement- envoyés a travers les portes de sortie et arrive sur les portes d'entrées.
 
-Une porte d'entrée d'un module et une porte de sortie d'un autre module peuvent êtres liées par une connexion.Les connexion peuvent être créées entre modules appartenant au même niveau hiérarchique :Dans un modules composé,les portes de deux sous-modules,ou une porte d'un sous-module et la porte du module composé parent peuvent être interconnectées.les connexions impliquant des modules appartenant a différents niveaux hiérarchiques ne sont pas permises car ça constituerait un obstacle pour la réutilisation du modèle.
+Une porte d'entrée d'un module et une porte de sortie d'un autre module peuvent êtres liées par une connexion,les connexion peuvent être créées entre modules appartenant au même niveau hiérarchique :Dans un modules composé,les portes de deux sous-modules,ou une porte d'un sous-module et la porte du module composé parent peuvent être interconnectées.Les connexions impliquant des modules appartenant a différents niveaux hiérarchiques ne sont pas permises car ça constituerait un obstacle pour la réutilisation du modèle.
 
-A cause de la structure hiérarchique du modèle,les messages passent généralement par une chaine de connexions,partant de et arrivant dans des modules simples.Les modules composés agissent comme des conteneurs dans le modèle, faisant office de relai de messages entre leur sous-modules et le monde extérieur.Des paramètres comme le délai de propagation,le débit de transfert de données et le taux d'erreurs peuvent êtres assignées aux connexions.
+A cause de la structure hiérarchique du modèle les messages passent généralement par une chaine de connexions partant de et arrivant dans des modules simples,Les modules composés agissent comme des conteneurs dans le modèle, faisant office de relai de messages entre leur sous-modules et le monde extérieur.Des paramètres comme le délai de propagation,le débit de transfert de données et le taux d'erreurs peuvent êtres assignées aux connexions.
 
-L'utilisateur peut définir des types de connexions avec leur propriétés spécifiques .Ces types de connexions sont appelées -dans le vocabulaire d'Omnet++- les \emph{Channels} (pour canaux de communication)  et peuvent être réutilisé dans plusieurs endroits de la simulation.
+L'utilisateur peut définir des types de connexions avec leur propriétés spécifiques ,ces types de connexions sont appelées -dans le vocabulaire d'Omnet++- les \emph{Channels} (pour canaux de communication)  et peuvent être réutilisé dans plusieurs endroits de la simulation.
 
-Les modules peuvent avoir des paramètres,les paramètres sont principalement utilisés pour passer des données de configuration aux modules ,et pour aider a définir la topologie du modèle.Les paramètres peuvent êtres  de différents types: des chaines de caractères,des types numériques ou des booléens.Les paramètres peuvent aussi agir comme des sources de nombres aléatoires dont la distribution est définie dans les fichiers de configuration du modèle.Leur valeurs peuvent aussi êtres assignées d'une façon interactive par l'utilisateur lors de l'exécution de la simulation.Les paramètres peuvent aussi contenir des expressions référençant d'autres paramètres.Les modules composés peuvent passer des paramètres ou des expressions a leur sous modules.
+Les modules peuvent avoir des paramètres,les paramètres sont principalement utilisés pour passer des données de configuration aux modules et pour aider a définir la topologie du modèle.Les paramètres peuvent êtres  de différents types: des chaines de caractères,des types numériques ou des booléens,les paramètres peuvent aussi agir comme des sources de nombres aléatoires dont la distribution est définie dans les fichiers de configuration du modèle,leurs valeurs peuvent aussi êtres assignées d'une façon interactive par l'utilisateur lors de l'exécution de la simulation.Les paramètres peuvent  contenir des expressions référençant d'autres paramètres et les modules composés peuvent passer des paramètres ou des expressions a leur sous modules.
 
 Omnet++ fournit des moyens  pour permettre a l'utilisateur de décrire  la structure du système d'une façon efficace,les principaux sont les suivants:
 
