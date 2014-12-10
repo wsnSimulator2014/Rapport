@@ -1,30 +1,29 @@
-
-
-
 \chapter{Généralités sur les réseaux de capteurs sans fil}
 \section{Introduction}
-        Le progrès technologique qu'a connu le domaine des réseaux sans fil et de la micro-électronique ont permis le développement de micro-composants intégrant des dispositifs de captage, de calcul et de communication sans fil, dans un même circuit, de petite dimension et à cout réduit nommé capteur sans fil intelligent, ces nouveaux composants  ont donné naissance à un tout nouveau type de réseaux, il s'agit des réseaux de capteurs sans fil (RCSFs), un réseau basé sur l'effort collaboratif entre plusieurs capteurs sans fil, ces réseaux initialement dédiés au domaine militaire, ont actuellement envahi presque tous les secteurs,  de l'industrie, à la médecine, en passant par le domaine des transports et l'environnement.
+        Le progrès technologique qu'a connu le domaine des réseaux sans fil et de la micro-électronique ont permis le développement de micro-composants intégrant des dispositifs de captage, de calcul et de communication sans fil, dans un même circuit, de petite dimension et à cout réduit nommé capteur sans fil pouvant détecter, mesurer, recueillir et partager de l'information sur son environnement.\\
+         Ces nouveaux composants  ont donné naissance à un tout nouveau type de réseaux, il s'agit des réseaux de capteurs sans fil (RCSFs), il s'agit d'un travail collaboratif entre un nombre important de capteurs sans fil déployés sur une surface géographique donné dans le but de collecter des données relatives à un phénomène à observer.  \\
+         Ces réseaux initialement dédiés au domaine militaire, ont actuellement envahi presque tous les secteurs,  de l'industrie, à la médecine, en passant par le domaine des transports et l'environnement.
         
         %Pour déclarer une nouvelle abréviation
         \nomenclature{RCSF}{Réseau de capteurs sans fil}
         
-     A travers ce chapitre, nous allons présenter une description globale de ces réseaux, leurs architectures, leurs caractéristiques, ainsi leurs domaines d'utilisation.
+     A travers ce chapitre, nous allons commencer par une présentation des réseaux sans fil, puis une description et une architecture d'un capteur sans fil seront présentés pour passer aux réseaux de capteurs sans fil à travers  une description globale de ces réseaux, leurs architectures, leurs contraintes de conception, ainsi leurs domaines d'utilisation.
         
 \section{Les réseaux sans fil} 
  Les réseaux sans fil se sont de plus en plus répandu au fil des années, les liaisons filaires permettant l'accès au réseau se font désormais rare, cela est due à la flexibilité offerte par le sans fil et la forte apparition des  unités de calcul mobiles (smartphones, tablettes, laptops, PDA...), plusieurs normes et  technologies de transmission sans fil se sont développées (WiFi, BlueThooth, ZigBee...) selon le domaine d'utilisation et la portée de la transmission.\\
- Les réseaux sans fil peuvent être classé selon plusieurs critères, nous nous intéresserons à leur classement  en deux grandes classes selon la présence ou l'absence d'une infrastructure administrant le réseau.
+ Les réseaux sans fil peuvent être classé selon plusieurs critères, nous nous intéresserons à leur classement   selon la présence ou l'absence d'une infrastructure administrant le réseau.
 \begin{itemize}
-\item \textbf{Les réseaux avec infrastructure:}Dans ce type de réseaux, une infrastructure est mise en place pour l'administration du réseau, les périphériques au sein ce réseau ne peuvent pas communiquer directement entre eux sans passer par cette infrastructure. 
+\item \textbf{Les réseaux avec infrastructure: }Dans ce type de réseaux, une infrastructure est mise en place pour l'administration du réseau généralement un point d'accès, les périphériques au sein ce réseau ne peuvent pas communiquer directement, les communications doivent passer obligatoirement par le point d'accès. 
 
-\item \textbf{Les réseaux sans infrastructure:}Les réseaux sans infrastructure appelés aussi réseaux Ad-Hoc, ne comportent pas d'infrastructure de gestion, tous les nœuds du réseau peuvent être mobiles et communiquent directement entre eux, les nœuds s'auto-organisent afin d'effectuer les processus de routage et d'acheminement de données, cette décentralisation offerte par ces réseaux ouvre la voix à plusieurs types d'applications, les réseaux de capteurs sans fil dont nous allons présenter est un type particulier de ces réseaux.
+\item \textbf{Les réseaux sans infrastructure: }Les réseaux sans infrastructure appelés aussi réseaux Ad-Hoc, ne comportent pas d'infrastructure centralisé administrant le réseau, les nœuds voisins communiquent directement entre eux, les nœuds s'auto-organisent afin d'effectuer les processus de routage et d'acheminement de données, cette décentralisation offerte par ces réseaux ouvre la voix à plusieurs types d'applications, les réseaux de capteurs sans fil dont nous allons présenter est un type particulier de ces réseaux.
 \end{itemize}
 \section{Les capteurs sans fil}
 	\subsection{Qu'est qu'un capteur?}
-	Un capteur sans fil est un objet physique de petite taille peu couteux, sa fonctionnalité principale est de détecter et mesurer des phénomènes physiques l'environnant, ces données récupérées seront par la suite converties en données numériques pour une exploitation future. Un capteur est alimenté généralement par des batteries ne pouvant ni se rechargé ni se remplacé dans la majorité des cas, ce qui rend la consommation énergétique un des défis majeurs pour la conception et le déploiement des réseaux de capteurs sans fil. La figure ci-dessous illustre un modèle réel de capteur sans fil:
+	Un capteur sans fil est un objet physique de petite taille peu couteux, sa fonctionnalité principale est de détecter et mesurer des phénomènes physiques l'environnant, ces données récupérées seront par la suite converties en données numériques pour une exploitation future. Un capteur est alimenté généralement par des batteries ne pouvant ni se rechargé ni se remplacé dans la majorité des cas, ce qui rend la consommation énergétique un des défis majeurs pour la conception et le déploiement des réseaux de capteurs sans fil.\\ La figure \ref{capteur} ci-dessous illustre un modèle réel de capteur sans fil:
 	\begin{figure}[h]
 	\begin{center}
 	\includegraphics[scale=0.5]{Chapitre1/capteur.jpg}
-	\caption{Exemple d'un capteur sans fil}
+	\caption{\label{capteur}Exemple d'un capteur sans fil}
 	\end{center}
 	\end{figure}
 	
@@ -34,13 +33,13 @@
 	\subsection{Architecture d'un capteur sans fil}
 	Afin d'accomplir ses fonctions principales un capteur est généralement composé de quatre unités principales à savoir une unité de capture, de traitement, de communication et une unité d'alimentation.
 	\begin{itemize}
-		\item \textbf{Unité de capture}: L'unité qui caractérise le capteur selon son domaine d'application, elle permet de récupérer des grandeurs physiques à partir de l'environnement (température, pression, son...) à travers des capteurs, ces grandeurs seront par la suite converties en grandeurs numériques pour être exploitées par l'unité de traitement, cette unité est composé donc de deux sous unités, la première effectue les opérations de captage, la deuxième quant à elle, elle s'occupe de la conversion des données analogiques acquises en données numériques. 
+		\item \textbf{Unité de capture}: L'unité qui caractérise le capteur selon son domaine d'application, elle permet de récupérer des grandeurs physiques à partir de l'environnement (température, pression, son...) à travers des capteurs, ces grandeurs seront par la suite converties en grandeurs numériques pour être exploitées par l'unité de traitement, cette unité est composé donc de deux sous unités, la première effectue les opérations de captage, la deuxième quant à elle, elle s'occupe de la conversion des données analogiques acquises en données numériques. \\
 
 		
-		\item \textbf{Unité de traitement:} Il s'agit de l'unité intermédiaire entre l'unité de capture et l'unité de communication, elle est dotée d'un processeur et d'un système d'exploitation spécifique, son rôle est de récupérer les données acquises par l'unité de capture, d'effectuer quelques traitements sur les données pour les transmettre par la suite vers l'unité de communication.
+		\item \textbf{Unité de traitement:} Il s'agit de l'unité intermédiaire entre l'unité de capture et l'unité de communication, elle est dotée d'un processeur et d'un système d'exploitation spécifique, son rôle est de récupérer les données acquises par l'unité de capture, d'effectuer quelques traitements sur les données pour les transmettre par la suite vers l'unité de communication. \\
 		
 		
-		\item \textbf{Unité de communication:}L'unité responsable de communiquer les données acquises par le capteur vers l'extérieur (capteurs avoisinants), à travers un support de communication radio. 
+		\item \textbf{Unité de communication:}L'unité responsable de communiquer les données acquises par le capteur vers l'extérieur (capteurs avoisinants), à travers un support de communication radio. \\ 
 
 		
 		\item \textbf{Unité d'alimentation:}L'unité en charge de fournir l'énergie nécessaire au fonctionnement des trois autres unités, il s'agit dans la majorité des cas de batteries ne pouvant être ni rechargés ni remplacés vu l'environnement hostile de déploiement des capteurs.
@@ -56,10 +55,31 @@
 		\caption{Architecture de base d'un capteur sans fil}
 	\end{figure}
 	
-	Il est à noter qu'en plus de ces unités de base, les capteurs peuvent être dotés d'autres unités additionnels selon leurs domaines d'applications, (eg: unités permettant la mobilité des capteurs, unités permettant la localisation des capteurs...etc)
-		 
+	Il est à noter qu'en plus de ces unités de base, les capteurs peuvent être dotés d'autres unités additionnels selon leurs domaines d'applications, (eg: unités permettant la mobilité des capteurs, unités permettant la localisation des capteurs...etc).
+	
+	\subsection{Les systèmes d'exploitation des capteurs sans fil}
+ Les systèmes d'exploitation jouent le rôle de gestionnaires de ressources dans un système informatique, une gestion efficace et équitable est primordiale. Or dans le cas des capteurs sans fil les ressources sont extrêmement limitées ce qui impose de nouveaux défis de conception des systèmes d'exploitation destinés aux capteurs sans fil par rapport aux systèmes d'exploitation traditionnels.\\
+ Plusieurs facteurs devraient être pris en considération lors de la conception d'un système d'exploitation destiné au capteurs sans fil à savoir:
+ \begin{itemize}
+ \item \textbf{Taille réduite du système: }La mémoire limitée des capteurs sans fil (à l'ordre de quelques kilo bits), impose une taille réduite du système d'exploitation. 
+ 
+ \item \textbf{Gestion de l'énergie: }Le système d'exploitation devraient fournir des mécanismes de gestion et d'économie d'énergie, par exemple éteindre certains périphériques lorsque le capteur est au repos et les rallumer à la suite d'interception d'événements.
+ 
+ \item \textbf{L'ordonnancement des processus: }Les ordonnanceurs dans les systèmes d'exploitation classique avaient pour objectifs de réduire la latence et de maximiser l'utilisation des ressources, dans le cas des RCSFs l'algorithme d'ordonnancement devraient satisfaire les exigences de l'application tout en minimisant l'utilisation de la mémoire et de l'énergie. 
+ 
+ \item \textbf{Protection et gestion de la mémoire: }Dans un système d'exploitation classique chaque processus dispose de son propre espace d'adressage, ce mécanisme ne pouvant être appliqué pour les capteurs sans fil vu la taille réduite de la mémoire disponible, un mécanisme de partage de la mémoire devrait être mise en place.
+ 
+ \item \textbf{Support de protocoles de communication: }Un RCSF étant un système distribué de capteurs sans fil, le système d'exploitation doit offrir une interface de programmation (API) permettant aux applications de communiquer tout en prenant en considération l'hétérogénéité des nœuds composant le réseau. 
 
-\newpage
+ \end{itemize}
+ 
+ Plusieurs systèmes d'exploitation destinés aux capteurs sans fil se sont développés au fil du temps, parmi les systèmes les plus populaires, on distingue: TinyOS, Contiki, MANTIS, LiteOS.
+
+
+
+
+		 \newpage
+
 \section{Les réseaux de capteurs sans fil}
 \subsection{Définition}
 Un réseau de capteurs sans fil, est un ensemble de capteurs  sans fil -appelés nœuds- spatialement distribué sur une surface nommée \emph{champ de captage}, ces nœuds sont capables d'interagir avec leur environnement en détectant et mesurant des paramètres physiques de ce dernier(température, pression, bruit, mouvement, lumière...), ces paramètres sont échangées entre les nœuds à travers des ondes radio jusqu'à ce qu'ils atteignent une station de base externe au champ de captage, cette station appelée station puits (ou point de récolte) (\emph{sink} en anglais) peut utiliser les données récoltées localement ou elle les transmet à son tour  à un utilisateur final à  travers le réseau(réseau local, par satellite, via internet...). L'utilisateur peut aussi envoyer des requêtes au réseau à travers cette station de base qui considérée comme une passerelle.
@@ -73,11 +93,11 @@ La figure ci-dessous représente un exemple d'architecture d'un réseau de capte
 
 
 \subsection{Contraintes de conception des RCSFs }
-Les réseaux de capteurs sans fil (RCSFs), sont omniprésents dans de nombreux secteurs, et dans de nombreuses applications, cette diversification d'application est due  à une certaine flexibilité offerte par ces réseaux, à titre d'exemple la diversité des capteurs existants, la mobilité des nœuds, la possibilité d'utilisation de ces réseaux dans des milieux hostiles...etc, cette flexibilité à pour conséquences des défis de conception majeurs, afin d'adapter chaque réseau à son domaine d'application, car les exigences diffèrent selon l'application.
+Les réseaux de capteurs sans fil (RCSFs), sont omniprésents dans de nombreux secteurs, et dans de nombreuses applications, cette diversification d'application est due  à une certaine flexibilité offerte par ces réseaux, à titre d'exemple la diversité des capteurs existants, la mobilité des nœuds, la possibilité d'utilisation de ces réseaux dans des milieux hostiles...etc, cette diversification à pour conséquences des défis de conception majeurs afin d'adapter chaque réseau à son domaine d'application, car les exigences diffèrent selon l'application.
 Parmi ces contraintes on peut citer:
-\remarque{introduction ambigue}
+
 \begin{itemize}
-\item \textbf{Durée de vie du réseau}: Elle diffère selon les domaines d'applications, elle peut varier de quelques jours à plusieurs années, elle correspond à la durée entre la mise en place du réseau et l'épuisement de l'énergie d'un capteur du réseau.\\
+\item \textbf{Durée de vie du réseau}: Elle diffère selon les domaines d'applications, elle peut varier de quelques jours à plusieurs années, elle correspond à la durée entre la mise en place du réseau et l'épuisement de l'énergie des capteurs su réseau.\\
 
 \item \textbf{Limitation des ressources}: Les capteurs disposent de ressources limitées en terme de bande passante, puissance de calcul, mémoire...etc, cela afin de garantir une taille réduite et un prix abordable au capteur. La conception d'un RCSF doit prendre en considération ces limitations.\\
 
@@ -150,10 +170,11 @@ En plus des 5 couches vus précédemment, la communication dans les RCSFs se fai
 \begin{itemize}
  \item \textbf{Plan de gestion de l'énergie:}A pour rôle principal la gestion efficace de la consommation énergétique au sein du réseau lors des phases de détection, de traitement et de la communication en utilisant divers mécanismes, comme l'extinction du récepteur des messages lors de la réception d'un message pour éviter la réception et le traitement des messages dupliqués, ou bien encore signaler le faible niveau d'énergie atteint par nœud afin que ce dernier ne participe plus au processus de routage.\\
  
- \item \textbf{Plan de gestion de la mobilité:}A pour rôle la détection, le suivi et l'enregistrement des mouvements des nœuds voisins  pour garder une image récente du voisinage d'un nœud à tout moment, cette image sert pour les plan de gestion des tâches et d'énergie en effectuant un équilibrage de tâches et de consommation énergétique entre les nœuds (Deux noeuds couvrant la même région géographique ne doivent pas travailler en même temps).  \\
+ \item \textbf{Plan de gestion de la mobilité:}A pour rôle la détection, le suivi et l'enregistrement des mouvements des nœuds voisins  pour garder une image récente du voisinage d'un nœud à tout moment, cette image sert pour les plan de gestion des tâches et d'énergie en effectuant un équilibrage de tâches et de consommation énergétique entre les nœuds (Deux nœuds couvrant la même région géographique ne doivent pas travailler en même temps).  \\
  
  \item \textbf{Plan de gestion des tâches:}A pour rôle l'équilibrage de l'affectation des tâches entre les nœuds du réseau, ce qui garantit une meilleure consommation énergétique donc augmentation de la durée de vie du réseau.
 
 \end{itemize}	
    
+ 
  
